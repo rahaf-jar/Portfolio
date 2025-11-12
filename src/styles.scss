@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: hsl(0, 0%, 100%);
 }
 
 @font-face {
@@ -28,4 +29,8 @@ html, body {
 
 main {
   flex: 1; 
+}
+
+a{
+  text-decoration: none;
 }
