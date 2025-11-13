@@ -1,0 +1,79 @@
+.legal-notice-container {
+  background-color: hsl(220, 40%, 13%);
+  position: relative;
+  max-width: 1920px;
+  color: white;
+  padding: 60px 120px;
+  line-height: 1.6;
+
+  h1 {
+    color: hsl(95, 80%, 51%);
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 120px;
+      height: 3px;
+      background-color: hsl(266, 100%, 64%);
+      border-radius: 10px;
+    }
+
+    &::before {
+      left: calc(50% - 250px);
+    }
+
+    &::after {
+      width: 1200px;
+      right: calc(50% - 1330px);
+    }
+  }
+
+  h2 {
+    color: hsl(266, 100%, 64%);
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: hsl(266, 100%, 64%);
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  .highlight {
+    color: hsl(266, 100%, 64%);
+  }
+
+  .link {
+    color: hsl(195, 100%, 70%);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-text {
+    margin-top: 50px;
+    font-size: 14px;
+    color: hsl(0, 0%, 85%);
+  }
+
+  .date {
+    margin-top: 10px;
+    font-size: 13px;
+    color: hsl(0, 0%, 70%);
+  }
+}
