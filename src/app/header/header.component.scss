@@ -12,9 +12,9 @@
     width: 100%;
     padding: 37px 100px;
 
-    img{
-        height: 220px;
-        width: auto;
+    img {
+      height: 220px;
+      width: auto;
     }
 
     .header-right {
@@ -30,9 +30,10 @@
 
         a {
           color: hsl(0, 0%, 100%);
-          font-size: 18px;
+          font-size: 23px;
+          line-height: 120%;
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 100;
           transition: color 0.3s;
 
           &:hover {
@@ -47,19 +48,29 @@
         gap: 10px;
 
         button {
-            cursor: pointer;
-            border: 1px solid hsl(95, 80%, 51%);
-            background: none;
-            color: hsl(0, 0%, 100%);
-            font-weight: 100;
-            padding: 5px 8px;
-            border-radius: 10px;
+          cursor: pointer;
+          border: 1px solid hsl(95, 80%, 51%);
+          background: none;
+          color: hsl(0, 0%, 100%);
+          font-size: 17px;
+          line-height: 120%;
+          font-weight: 100;
+          padding: 5px 8px;
+          border-radius: 10px;
+          transition: all 0.3s ease;
 
-            &:hover {
-              background-color: #9747ff;
-              border: 1px solid hsl(266, 100%, 64%);
-              color: hsl(0, 0%, 100%);
-            }            
+          &:hover {
+            background-color: #9747ff;
+            border: 1px solid hsl(266, 100%, 64%);
+            color: hsl(0, 0%, 100%);
+          }
+
+          &.active {
+            background-color: hsl(95, 80%, 51%);
+            border: 1px solid hsl(95, 80%, 51%);
+            color: hsl(0, 0%, 100%);
+            font-weight: 800;
+          }
         }
       }
     }

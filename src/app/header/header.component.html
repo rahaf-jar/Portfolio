@@ -10,8 +10,19 @@
       </div>
 
       <div class="translate">
-        <button>DE</button>
-        <button>EN</button>
+        <button
+          [class.active]="selectedLang === 'DE'"
+          (click)="setLanguage('DE')"
+        >
+          DE
+        </button>
+
+        <button
+          [class.active]="selectedLang === 'EN'"
+          (click)="setLanguage('EN')"
+        >
+          EN
+        </button>
       </div>
     </div>
   </div>

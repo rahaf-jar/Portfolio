@@ -1,14 +1,22 @@
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins-Light';
   height: 100%;
   margin: 0;
   padding: 0;
   color: hsl(0, 0%, 100%);
+  scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('/assets/fonts/Poppins-Light.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
