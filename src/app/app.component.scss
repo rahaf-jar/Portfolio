@@ -1,0 +1,48 @@
+.background-layer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left-side */
+.shadow0 {
+  left: 0.5rem;
+  top: 120px;
+  max-width: 500px;
+  position: absolute;
+}
+.shadow2 {
+  left: 1rem;
+  top: 200px;
+  max-width: 300px;
+  position: absolute;
+}
+.shadow3 {
+  left: 0.5rem;
+  top: 53%;
+  max-width: 200px;
+  position: absolute;
+}
+.shadow5 {
+  left: 0.5rem;
+  bottom: 10%;
+  max-width: 300px;
+  position: absolute;
+}
+
+/* Right-side */
+.shadow1 {
+  left: 0px;
+  top: 750px;
+  width: 572px;
+  height: 608px;
+  rotate: -46.66deg;
+  position: absolute;
+}
+.shadow4 {
+  right: 1rem;
+  top: 80%;
+  max-width: 300px;
+  position: absolute;
+}
