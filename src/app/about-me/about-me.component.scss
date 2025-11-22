@@ -1,0 +1,43 @@
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+
+  .about-me-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 37px 100px;
+
+    h1 {
+      font-size: 85px;
+      margin-bottom: -10px;
+      font-family: "Poppins-Bold";
+    }
+
+    .about-me-sections {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      section {
+        display: flex;
+        max-width: 450px;
+        gap: 20px;
+      }
+    }
+  }
+
+  .about-me-left-side {
+    display: flex;
+
+    .circle{
+        width: 400px;
+    }
+
+    .circle-line{
+        align-self: center;
+        height: 200px;
+        width: 200px;
+    }
+  }
+}
