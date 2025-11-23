@@ -54,22 +54,34 @@
     align-items: center;
 
     span {
-      font-size: 28px;
+      font-size: 65px;
       color: hsl(0, 0%, 100%);
-      margin-left: 10px;
       rotate: -90deg;
     }
 
     .name-title {
       display: flex;
       flex-direction: column;
-      font-size: 24px;
+      font-size: 80px;
       font-weight: 900;
 
       p {
         color: hsl(0, 0%, 100%);
+        font-family: "Poppins-Bold";
         margin: 0;
+      }
+
+      .frontend-developer {
+        font-size: 54px;
+        color: hsl(266, 100%, 64%);
+        font-family: "Poppins";
+        font-weight: 400;
       }
     }
   }
+
+  button{
+    margin-left: 80px;
+  }
+  
 }
