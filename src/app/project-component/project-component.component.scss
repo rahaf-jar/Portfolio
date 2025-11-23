@@ -1,0 +1,67 @@
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+
+  img {
+    width: 800px;
+    max-width: 100%;
+    margin-top: 0;
+    align-self: flex-start;
+    display: block;
+  }
+
+  .project-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    align-self: center;
+    text-align: left;
+    width: 500px;
+    padding-top: 0;
+
+    h2 {
+      color: hsl(266, 100%, 64%);
+      font-size: 30px;
+      font-family: Poppins-Bold;
+      margin: 0 0 8px 0;
+    }
+
+    span {
+      color: hsl(95, 80%, 51%);
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 60px;
+
+      button {
+        cursor: pointer;
+        border: 1px solid hsl(95, 80%, 51%);
+        background: none;
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 100;
+        padding: 10px 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #9747ff;
+          border: 1px solid hsl(266, 100%, 64%);
+          color: hsl(0, 0%, 100%);
+        }
+      }
+    }
+  }
+}
