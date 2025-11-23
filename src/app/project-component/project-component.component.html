@@ -1,17 +1,20 @@
 <div class="project">
-  <img src="/assets/imgs/projects/join.svg" alt="" />
+  <img [src]="project.image" alt="Project image" />
 
   <div class="project-information">
-    <h2>Join</h2>
-    <span>Angular | TypeScript | HTML | CSS | Firebase</span>
-    <p>
-      Task manager inspired by the Kanban System. Create and organize tasks
-      using drag and drop functions, assign users and categories.
-    </p>
+    <h2>{{ project.title }}</h2>
+    <span>{{ project.skills }}</span>
+    <p>{{ project.description }}</p>
 
     <div class="buttons">
-      <button>Live test</button>
-      <button>Github</button>
+      <a [href]="project.liveLink" target="_blank" rel="noopener noreferrer">
+        <button>Live test</button>
+      </a>
+
+      <a [href]="project.githubLink" target="_blank" rel="noopener noreferrer">
+        <button>GitHub</button>
+      </a>
     </div>
   </div>
 </div>
+

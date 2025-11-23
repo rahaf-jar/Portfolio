@@ -1,10 +1,15 @@
 <div class="portfolio padding">
-    <div class="portfolio-header">
-        <img class="small-line" src="/assets/imgs/lines/portfolio-small-line.svg">
-        <h1>Portfolio</h1>
-        <img class="long-line" src="/assets/imgs/lines/portfolio-long-line.svg">
-    </div>
-    <p>Explore a selection of my work here - Interact with projects to see my skills in action</p>
-    <app-project-component></app-project-component>
-    <app-project-component></app-project-component>
+  <div class="portfolio-header">
+    <img class="small-line" src="/assets/imgs/lines/portfolio-small-line.svg" />
+    <h1>Portfolio</h1>
+    <img class="long-line" src="/assets/imgs/lines/portfolio-long-line.svg" />
+  </div>
+
+  <p>Explore a selection of my work here - Interact with projects to see my skills in action</p>
+
+  <app-project-component
+    *ngFor="let p of projects"
+    [project]="p">
+  </app-project-component>
 </div>
+
