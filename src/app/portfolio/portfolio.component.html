@@ -5,11 +5,15 @@
     <img class="long-line" src="/assets/imgs/lines/portfolio-long-line.svg" />
   </div>
 
-  <p>Explore a selection of my work here - Interact with projects to see my skills in action</p>
+  <p>
+    Explore a selection of my work here - Interact with projects to see my
+    skills in action
+  </p>
 
   <app-project-component
-    *ngFor="let p of projects"
-    [project]="p">
+    *ngFor="let p of projects; let i = index"
+    [project]="p"
+    [reverse]="i % 2 === 1"
+  >
   </app-project-component>
 </div>
-

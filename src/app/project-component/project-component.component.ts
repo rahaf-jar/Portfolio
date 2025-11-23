@@ -10,4 +10,6 @@ import { Project } from '../models/project.model';
 })
 export class ProjectComponentComponent {
   @Input() project!: Project;
+  @Input() reverse: boolean = false;
+
 }
