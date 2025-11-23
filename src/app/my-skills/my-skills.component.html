@@ -1,0 +1,35 @@
+<div class="my-skills-container">
+  <div class="skills-container">
+    <div
+      class="skill-div"
+      *ngFor="let skill of skills"
+      [ngClass]="{ 'special-skill-div': skill.name === 'Continually Learning' }"
+    >
+      <img
+        class="skills"
+        [src]="'assets/imgs/my-skills-icons/' + skill.icon"
+        [alt]="skill.name"
+      />
+      <p [ngClass]="{ 'special-skill': skill.name === 'Continually Learning' }">
+        {{ skill.name }}
+      </p>
+    </div>
+  </div>
+
+  <div class="my-skills-right-side">
+    <div class="my-skills-header">
+      <h1>My skills</h1>
+      <img src="/assets/imgs/lines/my-skills-line.svg" />
+    </div>
+    <p>
+      I bring practical experience across a wide range of front-end technologies
+      — from JavaScript and Angular to Scrum — enabling me to build responsive,
+      engaging user experiences.
+    </p>
+    <h2>Looking for <b>another skill?</b></h2>
+    <p>Feel free to reach out — I’m always eager to learn and grow.</p>
+    <div class="my-skills-button">
+      <button>Get in touch</button>
+    </div>
+  </div>
+</div>

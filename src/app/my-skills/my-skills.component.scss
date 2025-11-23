@@ -1,0 +1,116 @@
+.my-skills-container {
+  display: flex;
+  padding: 37px 100px;
+  justify-content: space-between;
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 20px 120px;
+
+    .special-skill-div {
+      transform: scale(1);
+      transition: transform 0.3s ease;
+
+      .skills {
+        animation: none !important;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+    .skill-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      width: 70px;
+      text-align: center;
+
+      p {
+        font-family: "Poppins-Bold";
+        font-size: 14px;
+        margin-top: -10px;
+      }
+
+      .special-skill {
+        color: hsl(266, 100%, 64%);
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+    }
+
+    .skills {
+      width: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .skills:hover {
+      animation: smoothJump 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+  }
+
+  .my-skills-right-side {
+    max-width: 390px;
+
+    .my-skills-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 20px;
+
+      h1 {
+        font-size: 85px;
+        margin: 0;
+        font-family: "Poppins-Bold";
+      }
+
+      img {
+        align-self: center;
+        width: 100px;
+        right: 0;
+        position: absolute;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-family: "Poppins-Bold";
+
+      b {
+        color: hsl(266, 100%, 64%);
+      }
+    }
+
+    .my-skills-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+  }
+}
+
+@keyframes smoothJump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-18px);
+  }
+  55% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

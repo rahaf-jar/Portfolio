@@ -1,5 +1,6 @@
-html, body {
-  font-family: 'Poppins-Light';
+html,
+body {
+  font-family: "Poppins-Light";
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,22 +9,22 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins-Bold";
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins-Light';
-  src: url('assets/fonts/Poppins-Light.ttf') format('truetype');
+  font-family: "Poppins-Light";
+  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -43,10 +44,26 @@ html, body {
 }
 
 main {
-  flex: 1; 
+  flex: 1;
   padding-top: 80px;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+button {
+  background-color: hsl(95, 80%, 51%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: hsl(266, 100%, 64%);
+  }
 }

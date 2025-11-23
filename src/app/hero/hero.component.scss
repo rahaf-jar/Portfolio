@@ -72,20 +72,4 @@
       }
     }
   }
-
-  button{
-    background-color: hsl(95, 80%, 51%);
-    color: hsl(0, 0%, 100%);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: hsl(266, 100%, 64%);
-    }
-  }
 }
