@@ -1,0 +1,19 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    .contact-header{
+        display: flex;
+        gap: 20px;
+    }
+
+    .contact-content{
+        display: flex;
+
+        .contact-left-side{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+    }
+}
