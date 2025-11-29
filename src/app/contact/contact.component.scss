@@ -1,19 +1,113 @@
-.contact{
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  .contact-header {
+    display: flex;
+    gap: 20px;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+
+    .contact-left-side {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+    }
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  width: 600px;
+
+  input,
+  textarea {
+    padding: 15px 25px;
+    border: 1px solid hsl(266, 100%, 64%);
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 600px;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+
+    &::placeholder {
+      color: hsl(0, 0%, 90%);
+      font-family: "Poppins-Light";
+    }
+
+    &:hover {
+      border-color: hsl(95, 80%, 51%);
+    }
+
+    &:focus {
+      border-color: hsl(95, 80%, 51%);
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 200px;
+    resize: vertical;
+  }
+
+  .checkbox{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
 
-    .contact-header{
-        display: flex;
-        gap: 20px;
+    .checkbox-input {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 5px;
     }
 
-    .contact-content{
-        display: flex;
-
-        .contact-left-side{
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-        }
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      background-color: transparent;
+      border: hsl(266, 100%, 64%);
+      color:  hsl(266, 100%, 64%);
     }
+
+    span {
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+      font-family: "Poppins-Light";
+    }
+
+    a {
+      color: hsl(266, 100%, 64%);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    small{
+      margin-left: 5px;
+    }
+  }
+
+  input.error,
+  textarea.error {
+    border-color: hsl(349, 84%, 52%);
+  }
+
+  small {
+    display: block;
+    color: hsl(349, 84%, 52%);
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
 }

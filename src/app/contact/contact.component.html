@@ -1,14 +1,70 @@
 <div id="contact" class="contact">
-    <div class="contact-header">
-        <img src="/assets/imgs/lines/contact-line.svg">
-        <h1>Contact</h1>
+  <div class="contact-header">
+    <img src="/assets/imgs/lines/contact-line.svg" />
+    <h1>Contact</h1>
+  </div>
+  <div class="contact-content padding">
+    <div class="contact-left-side">
+      <h2>Got a problem to solve?</h2>
+      <p>
+        Encourage people to contact you and describe what role you are
+        interested in. Show that you will add value to their projects through
+        your work.
+      </p>
+      <p>Need a Frontend developer? <b>Contact me!</b></p>
     </div>
-    <div class="contact-content padding">
-        <div class="contact-left-side">
-            <h2>Got a problem to solve?</h2>
-            <p>Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.</p>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+    <div class="contact-form">
+      <input
+        placeholder="Your name"
+        type="text"
+        [(ngModel)]="name"
+        (focus)="validateName()"
+        (input)="validateName()"
+        (blur)="validateName()"
+        [class.error]="nameError"
+      />
+      <small *ngIf="nameError">Your name is required</small>
+
+      <input
+        placeholder="Your email"
+        type="email"
+        [(ngModel)]="email"
+        (focus)="validateEmail()"
+        (input)="validateEmail()"
+        (blur)="validateEmail()"
+        [class.error]="emailError"
+      />
+      <small *ngIf="emailError">Your email is required</small>
+
+      <textarea
+        placeholder="Your message"
+        [(ngModel)]="message"
+        (focus)="validateMessage()"
+        (input)="validateMessage()"
+        (blur)="validateMessage()"
+        [class.error]="messageError"
+      ></textarea>
+      <small *ngIf="messageError">Your message is empty</small>
+
+      <div class="checkbox">
+        <div class="checkbox-input">
+          <input
+            type="checkbox"
+            [(ngModel)]="checkbox"
+            (focus)="validateCheckbox()"
+            (input)="validateCheckbox()"
+            (blur)="validateCheckbox()"
+            [class.error]="checkboxError"
+          />
+          <span
+            >I've read the <a href="">privacy policy</a> and agree to the
+            processing of my data as outlined.</span
+          >
         </div>
-        <div></div>
+        <small *ngIf="checkboxError">please accept the privacy policy</small>
+      </div>
+      <button [disabled]="checkboxError">Send message :)</button>
+
     </div>
+  </div>
 </div>
