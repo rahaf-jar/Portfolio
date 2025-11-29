@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(public scroll: ScrollService){}
+  
   name = '';
   email = '';
   message = '';

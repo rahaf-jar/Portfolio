@@ -10,4 +10,14 @@ export class ScrollService {
       ?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  scrollToFooter() {
+    document.getElementById('footer')
+      ?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  scrollToHero() {
+    document.getElementById('hero')
+      ?.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
