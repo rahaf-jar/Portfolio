@@ -33,7 +33,7 @@ export class ContactComponent {
   }
 
   validateCheckbox() {
-    this.checkboxError = this.checkbox;
+    this.checkboxError = !this.checkbox;
   }
 
   isFormInvalid() {
