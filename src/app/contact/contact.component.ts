@@ -35,4 +35,13 @@ export class ContactComponent {
   validateCheckbox() {
     this.checkboxError = this.checkbox;
   }
+
+  isFormInvalid() {
+    return (
+      this.name.trim() === '' ||
+      this.email.trim() === '' ||
+      this.message.trim() === '' ||
+      !this.checkbox
+    );
+  }
 }

@@ -57,7 +57,7 @@
     resize: vertical;
   }
 
-  .checkbox{
+  .checkbox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,35 +67,44 @@
 
     .checkbox-input {
       display: flex;
-      align-items: start;
-      justify-content: center;
+      align-items: center;
       gap: 5px;
-    }
 
-    input[type="checkbox"] {
-      width: 16px;
-      height: 16px;
-      background-color: transparent;
-      border: hsl(266, 100%, 64%);
-      color:  hsl(266, 100%, 64%);
-    }
-
-    span {
-      font-size: 14px;
-      color: hsl(0, 0%, 100%);
-      font-family: "Poppins-Light";
-    }
-
-    a {
-      color: hsl(266, 100%, 64%);
-
-      &:hover {
-        text-decoration: underline;
+      input[type="checkbox"] {
+        width: 5px;
+        height: 5px;
+        border: 2px solid hsl(95, 80%, 51%);
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        appearance: none;
+        transform: scale(0.7);
+        transform-origin: top left;
+        padding: 15px 15px;
       }
-    }
 
-    small{
-      margin-left: 5px;
+      input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        left: 17px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid hsl(95, 80%, 51%);
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg) scale(1.5);
+        transform-origin: top left;
+      }
+
+      span {
+        font-family: "Poppins-Light";
+        color: hsl(0, 0%, 100%);
+        font-size: 14px;
+        align-self: center;
+        justify-self: center;
+        margin-top: -7px;
+        margin-left: -5px;
+      }
     }
   }
 
@@ -109,5 +118,35 @@
     color: hsl(349, 84%, 52%);
     margin-top: -10px;
     margin-bottom: 10px;
+  }
+}
+
+button {
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-family: "Poppins-Light";
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  width: fit-content;
+  align-self: center;
+  background-color: hsl(95, 80%, 51%);
+  color: white;
+  box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+
+  &:hover:not(.disabled) {
+    transform: translateY(-1px) scale(1.1);
+    background-color: hsl(266, 100%, 64%);
+  }
+
+  &.disabled {
+    background-color: hsl(0, 0%, 71%);
+    color: white;
+    cursor: not-allowed;
+    opacity: 1;
+    transform: none;
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   }
 }

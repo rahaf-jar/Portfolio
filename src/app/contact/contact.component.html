@@ -63,8 +63,9 @@
         </div>
         <small *ngIf="checkboxError">please accept the privacy policy</small>
       </div>
-      <button [disabled]="checkboxError">Send message :)</button>
-
+      <button [disabled]="isFormInvalid()" [class.disabled]="isFormInvalid()">
+        Send message :)
+      </button>
     </div>
   </div>
 </div>
