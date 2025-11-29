@@ -5,18 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class ScrollService {
   
-  scrollToContact() {
-    document.getElementById('contact')
-      ?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  scrollToFooter() {
-    document.getElementById('footer')
-      ?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  scrollToHero() {
-    document.getElementById('hero')
+  scrollTo(component: string): void {
+    document.getElementById(component)
       ?.scrollIntoView({ behavior: 'smooth' });
   }
 
