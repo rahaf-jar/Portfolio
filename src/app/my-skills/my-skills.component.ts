@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgFor, NgClass } from '@angular/common';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -9,6 +10,8 @@ import { NgFor, NgClass } from '@angular/common';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+
+  constructor(public scroll: ScrollService){}
 
   skills = [
     { name: 'HTML', icon: 'html.svg' },
