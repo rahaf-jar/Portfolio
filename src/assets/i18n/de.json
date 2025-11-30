@@ -1,7 +1,7 @@
 {
   "header": {
     "about_me": "Über mich",
-    "skills": "Fähigkeiten",
+    "skills": "Skills",
     "portfolio": "Portfolio"
   },
 
@@ -19,6 +19,13 @@
     "paragraph2": "Ich wohne in Regensburg und bin offen für Remote- oder Hybridarbeit — so kann ich meine beste Arbeit abliefern.",
     "paragraph3": "Ich entdecke gern neue Technologien und erweitere mein Können Schritt für Schritt — immer weiter lernen hält mich motiviert.",
     "paragraph4": "Aus jedem Fehler lerne ich etwas. Sozusagen mein eingebautes Upgrade-System — mit jeder Version werde ich ein Stück besser."
+  },
+
+  "skills": {
+    "title": "Meine Skills",
+    "description": "Ich habe praktische Erfahrung mit verschiedenen Frontend-Tools — von JavaScript und Angular bis zu Scrum — und kann damit interaktive und responsive Erlebnisse gestalten.",
+    "question": "Noch eine Fähigkeit?",
+    "followup": "Melde dich gern — ich lerne immer gern Neues dazu."
   }
 }
 

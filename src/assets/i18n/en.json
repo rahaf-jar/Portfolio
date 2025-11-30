@@ -19,5 +19,12 @@
     "paragraph2": "I’m based in Regensburg and fully open to remote or hybrid work—flexibility helps me do my best work.",
     "paragraph3": "I enjoy exploring new technologies and building up my skill set step by step—continuous learning keeps me motivated.",
     "paragraph4": "I learn something from every mistake I make. Think of it as my built-in upgrade system—I get a little better with each version."
+  },
+
+  "skills": {
+    "title": "My skills",
+    "description": "I have hands-on experience with a variety of front-end tools — from JavaScript and Angular to Scrum — creating interactive and responsive user experiences.",
+    "question": "Looking for another skill?",
+    "followup": "Feel free to reach out — I’m always excited to learn new things."
   }
 }
