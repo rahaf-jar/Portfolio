@@ -4,9 +4,15 @@
 
     <div class="header-right">
       <div class="links">
-        <span (click)="navigateToSection('about_me')">About me</span>
-        <span (click)="navigateToSection('skills')">Skills</span>
-        <span (click)="navigateToSection('portfolio')">Portfolio</span>
+        <span (click)="navigateToSection('about_me')">{{
+          translation.t("header.about_me")
+        }}</span>
+        <span (click)="navigateToSection('skills')">{{
+          translation.t("header.skills")
+        }}</span>
+        <span (click)="navigateToSection('portfolio')">{{
+          translation.t("header.portfolio")
+        }}</span>
       </div>
 
       <div class="translate">
@@ -16,7 +22,6 @@
         >
           DE
         </button>
-
         <button
           [class.active]="selectedLang === 'EN'"
           (click)="setLanguage('EN')"

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 import { RouterModule } from '@angular/router';
 
 @Component({

@@ -1,24 +1,29 @@
 import { Component } from '@angular/core';
-import { ScrollService } from '../scroll.service';
-import { Router } from '@angular/router';
+import { ScrollService } from '../services/scroll.service';
+import { Router, RouterModule } from '@angular/router';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
+  imports: [RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 
-  selectedLang = 'DE';
+  selectedLang: 'EN' | 'DE' = 'DE';
 
   constructor(
     public scroll: ScrollService,
-    private router: Router
-  ) {}
+    private router: Router,
+    public translation: TranslationService
+  ) {
+    this.translation.currentLang$.subscribe(lang => this.selectedLang = lang);
+  }
 
-  setLanguage(lang: string) {
-    this.selectedLang = lang;
+  setLanguage(lang: 'EN' | 'DE') {
+    this.translation.setLanguage(lang);
   }
 
   navigateToSection(section: string) {
