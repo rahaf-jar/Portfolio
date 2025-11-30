@@ -3,6 +3,7 @@
     <img src="/assets/imgs/lines/contact-line.svg" />
     <h1>Contact</h1>
   </div>
+
   <div class="contact-content padding">
     <div class="contact-left-side">
       <h2>Got a problem to solve?</h2>
@@ -13,6 +14,7 @@
       </p>
       <p>Need a Frontend developer? <b>Contact me!</b></p>
     </div>
+
     <div class="contact-form">
       <div
         class="input-wrapper"
@@ -23,12 +25,10 @@
           placeholder="Your name"
           type="text"
           [(ngModel)]="name"
-          (focus)="validateName()"
-          (input)="validateName()"
           (blur)="validateName()"
         />
       </div>
-      <small *ngIf="nameError">Your name is required</small>
+      <small *ngIf="nameError">Your name must be at least 3 letters</small>
 
       <div
         class="input-wrapper"
@@ -39,12 +39,10 @@
           placeholder="Your email"
           type="email"
           [(ngModel)]="email"
-          (focus)="validateEmail()"
-          (input)="validateEmail()"
           (blur)="validateEmail()"
         />
       </div>
-      <small *ngIf="emailError">Your email is required</small>
+      <small *ngIf="emailError">Please enter a valid email address</small>
 
       <div
         class="input-wrapper textarea-wrapper"
@@ -54,12 +52,12 @@
         <textarea
           placeholder="Your message"
           [(ngModel)]="message"
-          (focus)="validateMessage()"
-          (input)="validateMessage()"
           (blur)="validateMessage()"
         ></textarea>
       </div>
-      <small *ngIf="messageError">Your message is empty</small>
+      <small *ngIf="messageError"
+        >Your message should be at least 10 characters</small
+      >
 
       <div class="checkbox">
         <div class="checkbox-input">
@@ -70,24 +68,24 @@
             [class.error]="checkboxError"
           />
 
-          <span
-            >I've read the
+          <span>
+            I've read the
             <a
               routerLink="/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
               >privacy policy</a
             >
-            and agree to the processing of my data as outlined.</span
-          >
+            and agree to the processing of my data as outlined.
+          </span>
         </div>
-        <small *ngIf="checkboxError">please accept the privacy policy</small>
+        <small *ngIf="checkboxError">Please accept the privacy policy</small>
       </div>
-      <button [disabled]="isFormInvalid()" [class.disabled]="isFormInvalid()">
-        Send message :)
-      </button>
+
+      <button>Send message :)</button>
     </div>
   </div>
+
   <div class="go-up padding">
     <img
       (click)="scroll.scrollTo('hero')"
