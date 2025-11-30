@@ -26,5 +26,14 @@
     "description": "I have hands-on experience with a variety of front-end tools — from JavaScript and Angular to Scrum — creating interactive and responsive user experiences.",
     "question": "Looking for <span class='highlight'>another skill?</span>",
     "followup": "Feel free to reach out — I’m always excited to learn new things."
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Explore a selection of my work here - interact with projects to see my skills in action",
+    "projects": {
+      "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "elPollo": "Jump, run, and throw game based on object-oriented approach. Help Pepe to find coins and Tabasco salsa to fight against the crazy hen"
+    }
   }
 }

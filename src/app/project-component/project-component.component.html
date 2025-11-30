@@ -4,7 +4,7 @@
   <div class="project-information">
     <h2>{{ project.title }}</h2>
     <span>{{ project.skills }}</span>
-    <p>{{ project.description }}</p>
+    <p *ngIf="project.descriptionKey">{{ translation.t(project.descriptionKey) }}</p>
 
     <div class="buttons">
       <a [href]="project.liveLink" target="_blank" rel="noopener noreferrer">
@@ -17,4 +17,5 @@
     </div>
   </div>
 </div>
+
 
