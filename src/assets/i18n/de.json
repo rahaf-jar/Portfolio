@@ -3,5 +3,9 @@
     "about_me": "Über mich",
     "skills": "Fähigkeiten",
     "portfolio": "Portfolio"
+  },
+
+  "footer": {
+    "legal_notice": "Impressum"
   }
 }

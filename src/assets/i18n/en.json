@@ -3,5 +3,9 @@
     "about_me": "About me",
     "skills": "Skills",
     "portfolio": "Portfolio"
+  },
+
+  "footer": {
+    "legal_notice": "Legal Notice"
   }
 }
