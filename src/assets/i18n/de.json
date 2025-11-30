@@ -24,7 +24,7 @@
   "skills": {
     "title": "Meine Skills",
     "description": "Ich habe praktische Erfahrung mit verschiedenen Frontend-Tools — von JavaScript und Angular bis zu Scrum — und kann damit interaktive und responsive Erlebnisse gestalten.",
-    "question": "Noch eine Fähigkeit?",
+    "question": "Auf der Suche nach <span class='highlight'>einer anderen Fähigkeit?</span>",
     "followup": "Melde dich gern — ich lerne immer gern Neues dazu."
   }
 }

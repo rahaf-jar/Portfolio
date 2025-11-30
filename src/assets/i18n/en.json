@@ -24,7 +24,7 @@
   "skills": {
     "title": "My skills",
     "description": "I have hands-on experience with a variety of front-end tools — from JavaScript and Angular to Scrum — creating interactive and responsive user experiences.",
-    "question": "Looking for another skill?",
+    "question": "Looking for <span class='highlight'>another skill?</span>",
     "followup": "Feel free to reach out — I’m always excited to learn new things."
   }
 }
