@@ -3,15 +3,15 @@ import { Router } from '@angular/router';
 import { ScrollService } from '../scroll.service';
 
 @Component({
-  selector: 'app-legal-notice',
+  selector: 'app-privacy-policy',
   standalone: true,
-  templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  imports: [],
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: './privacy-policy.component.scss'
 })
-export class LegalNoticeComponent {
-
+export class PrivacyPolicyComponent {
   constructor(public scroll: ScrollService, private router: Router){}
-  
+
   navigateToSection(section: string) {
     this.router.navigate(['/']).then(() => {
       setTimeout(() => {
@@ -19,4 +19,5 @@ export class LegalNoticeComponent {
       }, 50);
     });
   }
+
 }
