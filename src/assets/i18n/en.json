@@ -11,5 +11,13 @@
 
   "hero": {
     "frontend_developer": "FRONTEND DEVELOPER"
+  },
+
+  "about_me": {
+    "title": "About me",
+    "paragraph1": "I love turning ideas into real projects. Coding gives me the same creative joy as cooking — experimenting, improving, and shaping things until they’re just right.",
+    "paragraph2": "I’m based in Regensburg and fully open to remote or hybrid work—flexibility helps me do my best work.",
+    "paragraph3": "I enjoy exploring new technologies and building up my skill set step by step—continuous learning keeps me motivated.",
+    "paragraph4": "I learn something from every mistake I make. Think of it as my built-in upgrade system—I get a little better with each version."
   }
 }

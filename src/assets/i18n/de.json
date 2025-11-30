@@ -11,5 +11,14 @@
 
   "hero": {
     "frontend_developer": "FRONTEND-ENTWICKLER"
+  },
+
+  "about_me": {
+    "title": "Über mich",
+    "paragraph1": "Ich liebe es, Ideen in echte Projekte umzusetzen. Programmieren macht mir genauso Spaß wie Kochen — ausprobieren, verbessern und Sachen so lange formen, bis sie passen.",
+    "paragraph2": "Ich wohne in Regensburg und bin offen für Remote- oder Hybridarbeit — so kann ich meine beste Arbeit abliefern.",
+    "paragraph3": "Ich entdecke gern neue Technologien und erweitere mein Können Schritt für Schritt — immer weiter lernen hält mich motiviert.",
+    "paragraph4": "Aus jedem Fehler lerne ich etwas. Sozusagen mein eingebautes Upgrade-System — mit jeder Version werde ich ein Stück besser."
   }
 }
+
