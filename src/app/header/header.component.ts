@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ScrollService } from '../scroll.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,25 @@ import { ScrollService } from '../scroll.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(public scroll: ScrollService) {}
+
   selectedLang = 'DE';
+
+  constructor(
+    public scroll: ScrollService,
+    private router: Router
+  ) {}
 
   setLanguage(lang: string) {
     this.selectedLang = lang;
   }
+
+  navigateToSection(section: string) {
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        this.scroll.scrollTo(section);
+      }, 50);
+    });
+  }
 }
+
 
