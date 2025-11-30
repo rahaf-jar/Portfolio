@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  constructor(public scroll: ScrollService){}
-  
+  constructor(public scroll: ScrollService) {}
+
   name = '';
   email = '';
   message = '';
@@ -25,15 +25,16 @@ export class ContactComponent {
   checkboxError = false;
 
   validateName() {
-    this.nameError = this.name.trim() === '';
+    this.nameError = this.name.trim().length < 3;
   }
 
   validateEmail() {
-    this.emailError = this.email.trim() === '';
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    this.emailError = !emailPattern.test(this.email);
   }
 
   validateMessage() {
-    this.messageError = this.message.trim() === '';
+    this.messageError = this.message.trim().length < 10;
   }
 
   validateCheckbox() {
