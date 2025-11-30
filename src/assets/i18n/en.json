@@ -7,5 +7,9 @@
 
   "footer": {
     "legal_notice": "Legal Notice"
+  },
+
+  "hero": {
+    "frontend_developer": "FRONTEND DEVELOPER"
   }
 }

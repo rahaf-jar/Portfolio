@@ -7,5 +7,9 @@
 
   "footer": {
     "legal_notice": "Impressum"
+  },
+
+  "hero": {
+    "frontend_developer": "FRONTEND-ENTWICKLER"
   }
 }
