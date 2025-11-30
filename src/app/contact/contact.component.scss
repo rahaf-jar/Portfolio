@@ -33,7 +33,7 @@
     background-color: transparent;
     border-radius: 10px;
     font-size: 16px;
-    width: 600px;
+    width: 100%;
     box-sizing: border-box;
     color: hsl(0, 0%, 100%);
 
@@ -105,20 +105,15 @@
         margin-top: -7px;
         margin-left: -5px;
 
-        a{
+        a {
           color: hsl(266, 100%, 64%);
 
           &:hover {
-            text-decoration: underline; 
+            text-decoration: underline;
           }
         }
       }
     }
-  }
-
-  input.error,
-  textarea.error {
-    border-color: hsl(349, 84%, 52%);
   }
 
   small {
@@ -159,13 +154,13 @@ button {
   }
 }
 
-.go-up{
+.go-up {
   display: flex;
   justify-content: center;
   align-self: flex-end;
   cursor: pointer;
 
-  img{
+  img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -174,4 +169,38 @@ button {
       transform: translateY(-1px) scale(1.1);
     }
   }
+}
+
+.input-wrapper {
+  position: relative;
+
+  input,
+  textarea {
+    padding-right: 40px;
+    background-repeat: no-repeat;
+  }
+
+  &.error input,
+  &.error textarea {
+    border-color: hsl(3, 100%, 59%);
+    background-image: url('/assets/imgs/remaining-icons/error.svg');
+    background-position: right 12px center;
+  }
+
+  &.valid input,
+  &.valid textarea {
+    border-color: hsl(95, 80%, 51%);
+    background-image: url('/assets/imgs/remaining-icons/correct.svg');
+    background-position: right 12px center;
+  }
+}
+
+.textarea-wrapper textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.textarea-wrapper.error textarea,
+.textarea-wrapper.valid textarea {
+  background-position: right 12px top 12px;
 }

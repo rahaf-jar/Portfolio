@@ -14,36 +14,51 @@
       <p>Need a Frontend developer? <b>Contact me!</b></p>
     </div>
     <div class="contact-form">
-      <input
-        placeholder="Your name"
-        type="text"
-        [(ngModel)]="name"
-        (focus)="validateName()"
-        (input)="validateName()"
-        (blur)="validateName()"
+      <div
+        class="input-wrapper"
         [class.error]="nameError"
-      />
+        [class.valid]="!nameError && name.trim() !== ''"
+      >
+        <input
+          placeholder="Your name"
+          type="text"
+          [(ngModel)]="name"
+          (focus)="validateName()"
+          (input)="validateName()"
+          (blur)="validateName()"
+        />
+      </div>
       <small *ngIf="nameError">Your name is required</small>
 
-      <input
-        placeholder="Your email"
-        type="email"
-        [(ngModel)]="email"
-        (focus)="validateEmail()"
-        (input)="validateEmail()"
-        (blur)="validateEmail()"
+      <div
+        class="input-wrapper"
         [class.error]="emailError"
-      />
+        [class.valid]="!emailError && email.trim() !== ''"
+      >
+        <input
+          placeholder="Your email"
+          type="email"
+          [(ngModel)]="email"
+          (focus)="validateEmail()"
+          (input)="validateEmail()"
+          (blur)="validateEmail()"
+        />
+      </div>
       <small *ngIf="emailError">Your email is required</small>
 
-      <textarea
-        placeholder="Your message"
-        [(ngModel)]="message"
-        (focus)="validateMessage()"
-        (input)="validateMessage()"
-        (blur)="validateMessage()"
+      <div
+        class="input-wrapper textarea-wrapper"
         [class.error]="messageError"
-      ></textarea>
+        [class.valid]="!messageError && message.trim() !== ''"
+      >
+        <textarea
+          placeholder="Your message"
+          [(ngModel)]="message"
+          (focus)="validateMessage()"
+          (input)="validateMessage()"
+          (blur)="validateMessage()"
+        ></textarea>
+      </div>
       <small *ngIf="messageError">Your message is empty</small>
 
       <div class="checkbox">
@@ -68,6 +83,10 @@
     </div>
   </div>
   <div class="go-up padding">
-    <img (click)="scroll.scrollTo('hero')" src="assets/imgs/remaining-icons/go-up-button.svg" alt="" />
+    <img
+      (click)="scroll.scrollTo('hero')"
+      src="assets/imgs/remaining-icons/go-up-button.svg"
+      alt=""
+    />
   </div>
 </div>
