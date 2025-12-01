@@ -1,75 +1,74 @@
 <div class="legal-notice-container">
-  <h1>Privacy Policy</h1>
+  <h1>{{ translation.t("privacy.title") }}</h1>
 
   <section>
-    <h2>Controller</h2>
+    <h2>{{ translation.t("privacy.controller.title") }}</h2>
     <ul>
-      <li>Rahaf Jarrous</li>
-      <li>Puricellistraße 20</li>
-      <li>93049 Regensburg, Germany</li>
-      <li><a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a></li>
+      <li>{{ translation.t("privacy.controller.name") }}</li>
+      <li>{{ translation.t("privacy.controller.street") }}</li>
+      <li>{{ translation.t("privacy.controller.city") }}</li>
+      <li>
+        <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+      </li>
     </ul>
   </section>
 
   <section>
-    <h3>Data Collection</h3>
-    <p>This website collects only the data necessary to operate and respond to inquiries:</p>
+    <h3>{{ translation.t("privacy.collection.title") }}</h3>
+    <p>{{ translation.t("privacy.collection.text") }}</p>
     <ul>
-      <li><span class="highlight">Contact Data</span>: name, email address, and message when you contact me.</li>
-      <li><span class="highlight">Technical Data</span>: IP address, browser type, device information — automatically collected by the hosting provider to ensure functionality and security.</li>
+      <li>
+        <span class="highlight">{{ translation.t("privacy.collection.contactData.title") }}</span>:
+        {{ translation.t("privacy.collection.contactData.text") }}
+      </li>
+      <li>
+        <span class="highlight">{{ translation.t("privacy.collection.technicalData.title") }}</span>:
+        {{ translation.t("privacy.collection.technicalData.text") }}
+      </li>
     </ul>
   </section>
 
   <section>
-    <h3>Purpose & Legal Basis</h3>
+    <h3>{{ translation.t("privacy.purpose.title") }}</h3>
+    <p [innerHTML]="translation.t('privacy.purpose.text')"></p>
+  </section>
+
+  <section>
+    <h3>{{ translation.t("privacy.sharing.title") }}</h3>
+    <p>{{ translation.t("privacy.sharing.text") }}</p>
+  </section>
+
+  <section>
+    <h3>{{ translation.t("privacy.rights.title") }}</h3>
+    <p>{{ translation.t("privacy.rights.text1") }}</p>
     <p>
-      Personal data is processed solely to operate this website, respond to messages, and maintain technical security.
-      Legal basis: <span class="highlight">Art. 6(1)(b)</span> and <span class="highlight">Art. 6(1)(f)</span> GDPR.
+      <span class="highlight">
+        <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+      </span>
+      {{ translation.t("privacy.rights.text2") }}
     </p>
   </section>
 
   <section>
-    <h3>Data Sharing</h3>
-    <p>
-      Data is shared only with the hosting provider for technical operation under GDPR-compliant conditions.
-      No personal data is sold or shared with third parties for marketing.
-    </p>
+    <h3>{{ translation.t("privacy.security.title") }}</h3>
+    <p>{{ translation.t("privacy.security.text") }}</p>
   </section>
 
   <section>
-    <h3>Your Rights</h3>
-    <p>You may request access, correction, deletion, or restriction of your personal data, or object to processing at any time.</p>
-    <p>To exercise your rights, contact: <span class="highlight"><a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a></span>.</p>
+    <h3>{{ translation.t("privacy.retention.title") }}</h3>
+    <p>{{ translation.t("privacy.retention.text") }}</p>
   </section>
 
   <section>
-    <h3>Security</h3>
-    <p>
-      Your data is protected through secure hosting, access controls, and appropriate technical measures.
-      However, no internet transmission can be guaranteed as completely secure.
-    </p>
-  </section>
-
-  <section>
-    <h3>Retention</h3>
-    <p>
-      Contact messages are stored only as long as needed to respond to your inquiry.  
-      Technical log files are retained only briefly for security and troubleshooting.
-    </p>
-  </section>
-
-  <section>
-    <h3>External Links</h3>
-    <p>
-      External links on this website may lead to other websites.  
-      I am not responsible for the privacy practices of external providers.
-    </p>
+    <h3>{{ translation.t("privacy.external.title") }}</h3>
+    <p>{{ translation.t("privacy.external.text") }}</p>
   </section>
 
   <p class="footer-text">
-    For any privacy-related questions or requests, please contact me at: <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>.
+    {{ translation.t("privacy.footer.pre") }}
+    <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+    {{ translation.t("privacy.footer.post") }}
   </p>
 
-  <p class="date">Date: November 30, 2025</p>
+  <p class="date">{{ translation.t("privacy.date") }}</p>
 </div>
-

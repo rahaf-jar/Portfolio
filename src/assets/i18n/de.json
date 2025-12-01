@@ -98,5 +98,67 @@
       "post": "."
     },
     "date": "Datum: 30. November 2025"
+  },
+
+  "privacy": {
+    "title": "Datenschutzerklärung",
+
+    "controller": {
+      "title": "Verantwortliche Stelle",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg, Deutschland"
+    },
+
+    "collection": {
+      "title": "Datenerhebung",
+      "text": "Diese Website erhebt ausschließlich die Daten, die für den Betrieb und die Beantwortung von Anfragen erforderlich sind:",
+      "contactData": {
+        "title": "Kontaktdaten",
+        "text": "Name, E-Mail-Adresse und Nachricht, wenn du mich kontaktierst."
+      },
+      "technicalData": {
+        "title": "Technische Daten",
+        "text": "IP-Adresse, Browsertyp, Geräteinformationen — automatisch vom Hosting-Anbieter erfasst, um Funktionalität und Sicherheit zu gewährleisten."
+      }
+    },
+
+    "purpose": {
+      "title": "Zweck & Rechtsgrundlage",
+      "text": "Personenbezogene Daten werden ausschließlich verarbeitet, um diese Website zu betreiben, Anfragen zu beantworten und die technische Sicherheit aufrechtzuerhalten. Rechtsgrundlagen: <span class='highlight'>Art. 6(1)(b)</span> und <span class='highlight'>Art. 6(1)(f)</span> DSGVO."
+    },
+
+    "sharing": {
+      "title": "Datenweitergabe",
+      "text": "Daten werden nur an den Hosting-Anbieter zur technischen Bereitstellung unter DSGVO-konformen Bedingungen weitergegeben. Es erfolgt keine Weitergabe oder kein Verkauf personenbezogener Daten an Dritte zu Marketingzwecken."
+    },
+
+    "rights": {
+      "title": "Deine Rechte",
+      "text1": "Du kannst jederzeit Auskunft, Berichtigung, Löschung oder Einschränkung deiner personenbezogenen Daten verlangen oder der Verarbeitung widersprechen.",
+      "text2": "um mich zu erreichen."
+    },
+
+    "security": {
+      "title": "Sicherheit",
+      "text": "Deine Daten werden durch sicheres Hosting, Zugangskontrollen und geeignete technische Maßnahmen geschützt. Dennoch kann keine Datenübertragung über das Internet als vollständig sicher garantiert werden."
+    },
+
+    "retention": {
+      "title": "Speicherdauer",
+      "text": "Kontaktanfragen werden nur so lange gespeichert, wie es zur Beantwortung notwendig ist. Technische Logdateien werden lediglich kurzfristig für Sicherheits- und Fehlersuche-Zwecke aufbewahrt."
+    },
+
+    "external": {
+      "title": "Externe Links",
+      "text": "Externe Links auf dieser Website können zu anderen Webseiten führen. Für die Datenschutzpraktiken externer Anbieter übernehme ich keine Verantwortung."
+    },
+
+    "footer": {
+      "pre": "Für datenschutzbezogene Fragen oder Anliegen kontaktiere mich bitte unter:",
+      "post": ""
+    },
+
+    "date": "Datum: 30. November 2025"
   }
 }

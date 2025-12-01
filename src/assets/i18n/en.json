@@ -98,5 +98,67 @@
       "post": "."
     },
     "date": "Date: November 30, 2025"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+
+    "controller": {
+      "title": "Controller",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg, Germany"
+    },
+
+    "collection": {
+      "title": "Data Collection",
+      "text": "This website collects only the data necessary to operate and respond to inquiries:",
+      "contactData": {
+        "title": "Contact Data",
+        "text": "name, email address, and message when you contact me."
+      },
+      "technicalData": {
+        "title": "Technical Data",
+        "text": "IP address, browser type, device information — automatically collected by the hosting provider to ensure functionality and security."
+      }
+    },
+
+    "purpose": {
+      "title": "Purpose & Legal Basis",
+      "text": "Personal data is processed solely to operate this website, respond to messages, and maintain technical security. Legal basis: <span class='highlight'>Art. 6(1)(b)</span> and <span class='highlight'>Art. 6(1)(f)</span> GDPR."
+    },
+
+    "sharing": {
+      "title": "Data Sharing",
+      "text": "Data is shared only with the hosting provider for technical operation under GDPR-compliant conditions. No personal data is sold or shared with third parties for marketing."
+    },
+
+    "rights": {
+      "title": "Your Rights",
+      "text1": "You may request access, correction, deletion, or restriction of your personal data, or object to processing at any time.",
+      "text2": "to reach me."
+    },
+
+    "security": {
+      "title": "Security",
+      "text": "Your data is protected through secure hosting, access controls, and appropriate technical measures. However, no internet transmission can be guaranteed as completely secure."
+    },
+
+    "retention": {
+      "title": "Retention",
+      "text": "Contact messages are stored only as long as needed to respond to your inquiry. Technical log files are retained only briefly for security and troubleshooting."
+    },
+
+    "external": {
+      "title": "External Links",
+      "text": "External links on this website may lead to other websites. I am not responsible for the privacy practices of external providers."
+    },
+
+    "footer": {
+      "pre": "For any privacy-related questions or requests, please contact me at:",
+      "post": ""
+    },
+
+    "date": "Date: November 30, 2025"
   }
 }
