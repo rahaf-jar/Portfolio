@@ -75,13 +75,22 @@ button {
 
 .highlight {
   color: hsl(266, 100%, 64%);
-  font-weight: bold; 
+  font-weight: bold;
 }
 
-.margin-top-110px{
+.margin-top-110px {
   margin-top: 110px;
 }
 h1 {
   font-size: 70px;
   font-family: "Poppins-Bold";
+}
+
+.link {
+  color: hsl(195, 100%, 70%);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

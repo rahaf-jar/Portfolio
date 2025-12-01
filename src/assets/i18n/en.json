@@ -55,5 +55,48 @@
         "privacy": "Please accept the privacy policy"
       }
     }
+  },
+
+  "legal": {
+    "title": "Legal Notice",
+    "imprint": {
+      "title": "Imprint",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg"
+    },
+    "exploring": {
+      "title": "Exploring the Board"
+    },
+    "acceptance": {
+      "title": "Acceptance of terms",
+      "text": "By accessing and using <span class='highlight'>Portfolio</span> (Product), you acknowledge and agree to the following terms and any policies or amendments that may be presented from time to time. We, the listed students, may update or change these terms without notice."
+    },
+    "scope": {
+      "title": "Scope and ownership of the product",
+      "text1": "<span class='highlight'>Portfolio</span> was developed as part of a student group project within a web development bootcamp at the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. It serves educational purposes and is not intended for extensive personal or business use. Therefore, we cannot guarantee continuous availability, reliability, or accuracy of the product.",
+      "text2": "The design of <span class='highlight'>Portfolio</span> is owned by the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+    },
+    "proprietary": {
+      "title": "Proprietary rights",
+      "text": "Aside from the design owned by the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>, we, the listed students, retain all proprietary rights to <span class='highlight'>Portfolio</span>, including all associated copyrighted material, trademarks, and proprietary information."
+    },
+    "use": {
+      "title": "Use of the product",
+      "text": "<span class='highlight'>Portfolio</span> may only be used for lawful purposes and in accordance with applicable laws. Any illegal use or use intended to harass, harm, or intimidate others is strictly prohibited. You are solely responsible for your interactions with other users."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of warranties and limitation of liability",
+      "text": "<span class='highlight'>Portfolio</span> is provided \"as is\" without warranties of any kind, express or implied, including merchantability or fitness for a particular purpose. In no event shall we, the listed students, or the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, be liable for any damages, including lost profits, goodwill, data loss, or other intangible losses."
+    },
+    "indemnity": {
+      "title": "Indemnity",
+      "text": "You agree to indemnify and hold harmless us, the listed students, the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, and our affiliates from any claims, losses, or liabilities arising from your use of <span class='highlight'>Portfolio</span> or your violation of this Legal Notice."
+    },
+    "footer": {
+      "pre": "For any questions or notices, please contact us at",
+      "post": "."
+    },
+    "date": "Date: November 30, 2025"
   }
 }

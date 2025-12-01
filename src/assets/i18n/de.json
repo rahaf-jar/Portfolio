@@ -55,5 +55,48 @@
         "privacy": "Bitte akzeptiere die Datenschutzrichtlinie"
       }
     }
+  },
+
+  "legal": {
+    "title": "Impressum",
+    "imprint": {
+      "title": "Impressum",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg"
+    },
+    "exploring": {
+      "title": "Erreichbarkeit"
+    },
+    "acceptance": {
+      "title": "Akzeptanz der Bedingungen",
+      "text": "Durch den Zugriff auf und die Nutzung von <span class='highlight'>Portfolio</span> (Produkt) erkennst du die folgenden Bedingungen sowie alle Richtlinien, Ergänzungen oder Änderungen an, die dir gelegentlich präsentiert werden können, an und stimmst ihnen zu. Wir, die aufgeführten Studierenden, können diese Bedingungen jederzeit ohne vorherige Ankündigung aktualisieren oder ändern."
+    },
+    "scope": {
+      "title": "Umfang und Eigentum des Produkts",
+      "text1": "<span class='highlight'>Portfolio</span> wurde im Rahmen eines Studierendenprojekts in einem Webentwicklungs-Bootcamp bei der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a> entwickelt. Es dient ausschließlich Bildungszwecken und ist nicht für umfassende private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit oder Genauigkeit des Produkts garantieren.",
+      "text2": "Das Design von <span class='highlight'>Portfolio</span> gehört der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. Eine unautorisierte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist strengstens untersagt."
+    },
+    "proprietary": {
+      "title": "Eigentumsrechte",
+      "text": "Abgesehen vom Design, das der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a> gehört, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte an <span class='highlight'>Portfolio</span>, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen proprietären Informationen."
+    },
+    "use": {
+      "title": "Nutzung des Produkts",
+      "text": "<span class='highlight'>Portfolio</span> darf ausschließlich zu rechtmäßigen Zwecken und gemäß allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='highlight'>Portfolio</span> für illegale Aktivitäten oder um andere Personen zu belästigen, zu bedrohen, zu schädigen oder einzuschüchtern, ist strengstens untersagt. Du bist allein verantwortlich für deine Interaktionen mit anderen Nutzern von <span class='highlight'>Portfolio</span>."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "text": "<span class='highlight'>Portfolio</span> wird \"wie gesehen\" und ohne jegliche ausdrückliche oder stillschweigende Garantien bereitgestellt, einschließlich, aber nicht beschränkt auf die implizierten Garantien der Marktfähigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften wir, die aufgeführten Studierenden, oder die <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, für direkte, indirekte, zufällige, spezielle, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Goodwill, Datenverluste oder andere immaterielle Schäden, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden."
+    },
+    "indemnity": {
+      "title": "Freistellung",
+      "text": "Du stimmst zu, uns, die aufgeführten Studierenden, die <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a> sowie unsere Partner und Mitarbeiter von allen Ansprüchen, Schäden, Verlusten, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, die aus deiner Nutzung von <span class='highlight'>Portfolio</span> und/oder deinem Verstoß gegen dieses Impressum entstehen."
+    },
+    "footer": {
+      "pre": "Bei Fragen oder Mitteilungen kontaktiere uns bitte unter",
+      "post": "."
+    },
+    "date": "Datum: 30. November 2025"
   }
 }
