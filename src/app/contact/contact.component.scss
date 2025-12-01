@@ -205,3 +205,12 @@ button {
 .textarea-wrapper.valid textarea {
   background-position: right 12px top 12px;
 }
+
+.privacy-link {
+  color: hsl(266, 100%, 64%);
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}

@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ScrollService } from '../services/scroll.service';
 import { RouterModule } from '@angular/router';
+import { ScrollService } from '../services/scroll.service';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  constructor(public scroll: ScrollService) {}
+  constructor(public scroll: ScrollService, public translation: TranslationService) {}
 
   name = '';
   email = '';
@@ -42,11 +43,6 @@ export class ContactComponent {
   }
 
   isFormInvalid() {
-    return (
-      this.name.trim() === '' ||
-      this.email.trim() === '' ||
-      this.message.trim() === '' ||
-      !this.checkbox
-    );
+    return this.name.trim() === '' || this.email.trim() === '' || this.message.trim() === '' || !this.checkbox;
   }
 }

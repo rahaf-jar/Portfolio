@@ -35,5 +35,25 @@
       "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "elPollo": "Jump, run, and throw game based on object-oriented approach. Help Pepe to find coins and Tabasco salsa to fight against the crazy hen"
     }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "h2": "Have a project or an idea?",
+    "p1": "Feel free to reach out if you need support on a project or have an exciting opportunity. I’ll show you how my work can add value to your endeavor.",
+    "p2": "Need a Frontend developer? <b>Contact me!</b>",
+    "form": {
+      "name": "Your name",
+      "email": "Your email address",
+      "message": "Your message",
+      "button": "Send message :)",
+      "privacy": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "errors": {
+        "name": "Your name must be at least 3 letters",
+        "email": "Please enter a valid email address",
+        "message": "Your message should be at least 10 characters",
+        "privacy": "Please accept the privacy policy"
+      }
+    }
   }
 }

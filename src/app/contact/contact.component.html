@@ -1,18 +1,14 @@
 <div id="contact" class="contact">
   <div class="contact-header margin-top-110px">
     <img src="/assets/imgs/lines/contact-line.svg" />
-    <h1>Contact</h1>
+    <h1>{{ translation.t("contact.title") }}</h1>
   </div>
 
   <div class="contact-content padding">
     <div class="contact-left-side">
-      <h2>Got a problem to solve?</h2>
-      <p>
-        Encourage people to contact you and describe what role you are
-        interested in. Show that you will add value to their projects through
-        your work.
-      </p>
-      <p>Need a Frontend developer? <b>Contact me!</b></p>
+      <h2>{{ translation.t("contact.h2") }}</h2>
+      <p>{{ translation.t("contact.p1") }}</p>
+      <p [innerHTML]="translation.t('contact.p2')"></p>
     </div>
 
     <div class="contact-form">
@@ -22,13 +18,15 @@
         [class.valid]="!nameError && name.trim() !== ''"
       >
         <input
-          placeholder="Your name"
+          placeholder="{{ translation.t('contact.form.name') }}"
           type="text"
           [(ngModel)]="name"
           (blur)="validateName()"
         />
       </div>
-      <small *ngIf="nameError">Your name must be at least 3 letters</small>
+      <small *ngIf="nameError">{{
+        translation.t("contact.form.errors.name")
+      }}</small>
 
       <div
         class="input-wrapper"
@@ -36,13 +34,15 @@
         [class.valid]="!emailError && email.trim() !== ''"
       >
         <input
-          placeholder="Your email"
+          placeholder="{{ translation.t('contact.form.email') }}"
           type="email"
           [(ngModel)]="email"
           (blur)="validateEmail()"
         />
       </div>
-      <small *ngIf="emailError">Please enter a valid email address</small>
+      <small *ngIf="emailError">{{
+        translation.t("contact.form.errors.email")
+      }}</small>
 
       <div
         class="input-wrapper textarea-wrapper"
@@ -50,14 +50,14 @@
         [class.valid]="!messageError && message.trim() !== ''"
       >
         <textarea
-          placeholder="Your message"
+          placeholder="{{ translation.t('contact.form.message') }}"
           [(ngModel)]="message"
           (blur)="validateMessage()"
         ></textarea>
       </div>
-      <small *ngIf="messageError"
-        >Your message should be at least 10 characters</small
-      >
+      <small *ngIf="messageError">{{
+        translation.t("contact.form.errors.message")
+      }}</small>
 
       <div class="checkbox">
         <div class="checkbox-input">
@@ -67,23 +67,60 @@
             (change)="validateCheckbox()"
             [class.error]="checkboxError"
           />
-
           <span>
-            I've read the
-            <a
-              routerLink="/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              >privacy policy</a
-            >
-            and agree to the processing of my data as outlined.
+            <ng-container *ngIf="translation.currentLang$ | async as lang">
+
+              <ng-container *ngIf="lang === 'DE'">
+                {{
+                  translation
+                    .t("contact.form.privacy")
+                    .split("Datenschutzrichtlinie")[0]
+                }}
+                <a
+                  routerLink="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="privacy-link"
+                >
+                  Datenschutzrichtlinie
+                </a>
+                {{
+                  translation
+                    .t("contact.form.privacy")
+                    .split("Datenschutzrichtlinie")[1]
+                }}
+              </ng-container>
+
+              <ng-container *ngIf="lang === 'EN'">
+                {{
+                  translation
+                    .t("contact.form.privacy")
+                    .split("privacy policy")[0]
+                }}
+                <a
+                  href="/Angular-Projects/portfolio/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="privacy-link"
+                >
+                  privacy policy
+                </a>
+                {{
+                  translation
+                    .t("contact.form.privacy")
+                    .split("privacy policy")[1]
+                }}
+              </ng-container>
+            </ng-container>
           </span>
         </div>
-        <small *ngIf="checkboxError">Please accept the privacy policy</small>
+        <small *ngIf="checkboxError">{{
+          translation.t("contact.form.errors.privacy")
+        }}</small>
       </div>
 
       <button [disabled]="isFormInvalid()" [class.disabled]="isFormInvalid()">
-        Send message :)
+        {{ translation.t("contact.form.button") }}
       </button>
     </div>
   </div>

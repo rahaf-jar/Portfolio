@@ -35,6 +35,25 @@
       "join": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
       "elPollo": "Springen, rennen und werfen Spiel auf objektorientierter Basis. Hilf Pepe, Münzen zu sammeln und Tabasco-Sauce gegen die verrückte Henne einzusetzen."
     }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "h2": "Hast du ein Projekt oder eine Idee?",
+    "p1": "Melde dich gerne, wenn du Unterstützung bei einem Projekt brauchst oder eine spannende Gelegenheit hast. Ich zeige dir, wie meine Arbeit deinem Vorhaben Mehrwert bringen kann.",
+    "p2": "Frontend-Entwickler gesucht? <b>Kontaktiere mich!</b>",
+    "form": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail-Adresse",
+      "message": "Deine Nachricht",
+      "button": "Nachricht senden :)",
+      "privacy": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+      "errors": {
+        "name": "Dein Name muss mindestens 3 Buchstaben enthalten",
+        "email": "Bitte gib eine gültige E-Mail-Adresse ein",
+        "message": "Deine Nachricht muss mindestens 10 Zeichen enthalten",
+        "privacy": "Bitte akzeptiere die Datenschutzrichtlinie"
+      }
+    }
   }
 }
-
