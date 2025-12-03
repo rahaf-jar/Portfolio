@@ -11,22 +11,23 @@
       <p [innerHTML]="translation.t('contact.p2')"></p>
     </div>
 
-    <div class="contact-form">
+    <form class="contact-form" (submit)="sendEmail($event)">
       <div
         class="input-wrapper"
         [class.error]="nameError"
         [class.valid]="!nameError && name.trim() !== ''"
       >
         <input
+          name="from_name"
           placeholder="{{ translation.t('contact.form.name') }}"
           type="text"
           [(ngModel)]="name"
           (blur)="validateName()"
         />
       </div>
-      <small *ngIf="nameError">{{
-        translation.t("contact.form.errors.name")
-      }}</small>
+      <small *ngIf="nameError">
+        {{ translation.t("contact.form.errors.name") }}
+      </small>
 
       <div
         class="input-wrapper"
@@ -34,15 +35,16 @@
         [class.valid]="!emailError && email.trim() !== ''"
       >
         <input
+          name="from_email"
           placeholder="{{ translation.t('contact.form.email') }}"
           type="email"
           [(ngModel)]="email"
           (blur)="validateEmail()"
         />
       </div>
-      <small *ngIf="emailError">{{
-        translation.t("contact.form.errors.email")
-      }}</small>
+      <small *ngIf="emailError">
+        {{ translation.t("contact.form.errors.email") }}
+      </small>
 
       <div
         class="input-wrapper textarea-wrapper"
@@ -50,26 +52,27 @@
         [class.valid]="!messageError && message.trim() !== ''"
       >
         <textarea
+          name="message"
           placeholder="{{ translation.t('contact.form.message') }}"
           [(ngModel)]="message"
           (blur)="validateMessage()"
         ></textarea>
       </div>
-      <small *ngIf="messageError">{{
-        translation.t("contact.form.errors.message")
-      }}</small>
+      <small *ngIf="messageError">
+        {{ translation.t("contact.form.errors.message") }}
+      </small>
 
       <div class="checkbox">
         <div class="checkbox-input">
           <input
             type="checkbox"
+            name="privacy"
             [(ngModel)]="checkbox"
             (change)="validateCheckbox()"
             [class.error]="checkboxError"
           />
           <span>
             <ng-container *ngIf="translation.currentLang$ | async as lang">
-
               <ng-container *ngIf="lang === 'DE'">
                 {{
                   translation
@@ -114,15 +117,22 @@
             </ng-container>
           </span>
         </div>
-        <small *ngIf="checkboxError">{{
-          translation.t("contact.form.errors.privacy")
-        }}</small>
+        <small *ngIf="checkboxError">
+          {{ translation.t("contact.form.errors.privacy") }}
+        </small>
       </div>
 
-      <button [disabled]="isFormInvalid()" [class.disabled]="isFormInvalid()">
+      <button
+        type="submit"
+        [disabled]="isFormInvalid()"
+        [class.disabled]="isFormInvalid()"
+      >
         {{ translation.t("contact.form.button") }}
       </button>
-    </div>
+      <p *ngIf="feedbackMessage" class="feedback-message">
+        {{ feedbackMessage }}
+      </p>
+    </form>
   </div>
 
   <div class="go-up padding">

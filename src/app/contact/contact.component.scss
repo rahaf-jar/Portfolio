@@ -214,3 +214,11 @@ button {
 .privacy-link:hover {
   text-decoration: underline;
 }
+
+.feedback-message {
+  color: hsl(95, 80%, 51%);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  transition: opacity 0.3s ease-in-out;
+}

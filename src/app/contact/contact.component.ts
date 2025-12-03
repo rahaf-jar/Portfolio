@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ScrollService } from '../services/scroll.service';
 import { TranslationService } from '../services/translation.service';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'app-contact',
@@ -13,8 +14,12 @@ import { TranslationService } from '../services/translation.service';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  constructor(public scroll: ScrollService, public translation: TranslationService) {}
+  constructor(
+    public scroll: ScrollService,
+    public translation: TranslationService
+  ) {}
 
+  feedbackMessage = '';
   name = '';
   email = '';
   message = '';
@@ -24,6 +29,10 @@ export class ContactComponent {
   emailError = false;
   messageError = false;
   checkboxError = false;
+
+  serviceID = 'service_8l18m27';
+  templateID = 'template_wxyaai5';
+  publicKey = 'zDS91sITLZSEX-5ke';
 
   validateName() {
     this.nameError = this.name.trim().length < 3;
@@ -43,6 +52,45 @@ export class ContactComponent {
   }
 
   isFormInvalid() {
-    return this.name.trim() === '' || this.email.trim() === '' || this.message.trim() === '' || !this.checkbox;
+    return (
+      this.name.trim() === '' ||
+      this.email.trim() === '' ||
+      this.message.trim() === '' ||
+      !this.checkbox
+    );
+  }
+
+  sendEmail(event: Event) {
+    event.preventDefault();
+
+    emailjs
+      .send(
+        this.serviceID,
+        this.templateID,
+        {
+          from_name: this.name,
+          from_email: this.email,
+          message: this.message,
+        },
+        this.publicKey
+      )
+      .then(() => {
+        this.feedbackMessage = 'Message sent successfully!';
+        setTimeout(() => {
+          this.feedbackMessage = '';
+        }, 3000); 
+
+        this.name = '';
+        this.email = '';
+        this.message = '';
+        this.checkbox = false;
+      })
+      .catch(() => {
+        this.feedbackMessage =
+          'Failed to send message. Please try again later.';
+        setTimeout(() => {
+          this.feedbackMessage = '';
+        }, 3000);
+      });
   }
 }
