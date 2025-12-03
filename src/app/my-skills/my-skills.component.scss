@@ -7,6 +7,8 @@
     flex-wrap: wrap;
     max-width: 800px;
     gap: 20px 120px;
+    position: relative;
+    z-index: 1;
 
     .special-skill-div {
       transform: scale(1);
@@ -89,6 +91,14 @@
       justify-content: flex-end;
       margin-right: 10px;
     }
+  }
+
+  .shadow-2 {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    z-index: 0;
+    margin-top: 200px;
   }
 }
 
