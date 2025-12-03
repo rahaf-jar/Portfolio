@@ -30,23 +30,17 @@
   textarea {
     padding: 15px 25px;
     border: 1px solid hsl(266, 100%, 64%);
-    background-color: transparent;
+    background: transparent;
     border-radius: 10px;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
-    color: hsl(0, 0%, 100%);
+    color: #fff;
     font-family: "Poppins-Light";
-
     &::placeholder {
       color: hsl(0, 0%, 90%);
-      font-family: "Poppins-Light";
     }
-
-    &:hover {
-      border-color: hsl(95, 80%, 51%);
-    }
-
+    &:hover,
     &:focus {
       border-color: hsl(95, 80%, 51%);
       outline: none;
@@ -56,13 +50,12 @@
   textarea {
     height: 200px;
     resize: vertical;
+    min-height: 140px;
   }
 
   .checkbox {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: 15px;
     margin-top: 10px;
 
@@ -75,40 +68,35 @@
         width: 5px;
         height: 5px;
         border: 2px solid hsl(95, 80%, 51%);
-        background-color: transparent;
+        background: transparent;
         cursor: pointer;
-        position: relative;
         appearance: none;
         transform: scale(0.7);
-        transform-origin: top left;
-        padding: 15px 15px;
+        padding: 15px;
+        position: relative;
       }
 
       input[type="checkbox"]:checked::after {
         content: "";
         position: absolute;
-        left: 17px;
-        top: 2px;
+        left: 12px;
+        top: 6px;
         width: 5px;
         height: 10px;
         border: solid hsl(95, 80%, 51%);
         border-width: 0 2px 2px 0;
         transform: rotate(45deg) scale(1.5);
-        transform-origin: top left;
       }
 
       span {
-        font-family: "Poppins-Light";
-        color: hsl(0, 0%, 100%);
-        font-size: 14px;
-        align-self: center;
-        justify-self: center;
+        font: 14px "Poppins-Light";
+        color: #fff;
         margin-top: -7px;
         margin-left: -5px;
 
         a {
           color: hsl(266, 100%, 64%);
-
+          text-decoration: none;
           &:hover {
             text-decoration: underline;
           }
@@ -120,38 +108,33 @@
   small {
     display: block;
     color: hsl(349, 84%, 52%);
-    margin-top: -10px;
-    margin-bottom: 10px;
+    margin: -10px 0 10px;
   }
 }
 
 button {
   padding: 15px 30px;
   margin-top: 20px;
-  font-family: "Poppins-Light";
+  font: 20px "Poppins-Light";
   border-radius: 10px;
-  font-size: 20px;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s, background-color 0.3s;
   width: fit-content;
   align-self: center;
-  background-color: hsl(95, 80%, 51%);
-  color: white;
-  box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+  background: hsl(95, 80%, 51%);
+  color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   &:hover:not(.disabled) {
     transform: translateY(-1px) scale(1.1);
-    background-color: hsl(266, 100%, 64%);
+    background: hsl(266, 100%, 64%);
   }
 
   &.disabled {
-    background-color: hsl(0, 0%, 71%);
-    color: white;
+    background: hsl(0, 0%, 71%);
     cursor: not-allowed;
-    opacity: 1;
     transform: none;
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   }
 }
 
@@ -164,8 +147,7 @@ button {
   img {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
+    transition: transform 0.3s;
     &:hover {
       transform: translateY(-1px) scale(1.1);
     }
@@ -174,7 +156,6 @@ button {
 
 .input-wrapper {
   position: relative;
-
   input,
   textarea {
     padding-right: 40px;
@@ -184,35 +165,22 @@ button {
   &.error input,
   &.error textarea {
     border-color: hsl(3, 100%, 59%);
-    background-image: url('/assets/imgs/remaining-icons/error.svg');
-    background-position: right 12px center;
+    background: url('/assets/imgs/remaining-icons/error.svg') right 12px center no-repeat;
   }
 
   &.valid input,
   &.valid textarea {
     border-color: hsl(95, 80%, 51%);
-    background-image: url('/assets/imgs/remaining-icons/correct.svg');
-    background-position: right 12px center;
+    background: url('/assets/imgs/remaining-icons/correct.svg') right 12px center no-repeat;
   }
-}
-
-.textarea-wrapper textarea {
-  min-height: 140px;
-  resize: none;
-}
-
-.textarea-wrapper.error textarea,
-.textarea-wrapper.valid textarea {
-  background-position: right 12px top 12px;
 }
 
 .privacy-link {
   color: hsl(266, 100%, 64%);
   text-decoration: none;
-}
-
-.privacy-link:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .feedback-message {
@@ -220,5 +188,5 @@ button {
   font-size: 16px;
   text-align: center;
   margin-top: 10px;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s;
 }
