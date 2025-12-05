@@ -107,3 +107,68 @@
   width: 100vw;
   margin-top: 100px;
 }
+
+@media (max-width: 1600px) {
+  .hero-right-side {
+    .name-area {
+      span {
+        font-size: 35px;
+      }
+
+      .name-title {
+        font-size: 50px;
+
+        .frontend-developer {
+          font-size: 33.7px;
+        }
+      }
+    }
+
+    button {
+      margin-left: 20px;
+    }
+  }
+
+  .photo-shadow {
+    width: 550px;
+  }
+
+  .vector {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-right-side {
+    .name-area {
+      span {
+        font-size: 35px;
+      }
+
+      .name-title {
+        font-size: 40px;
+
+        .frontend-developer {
+          font-size: 27px;
+        }
+      }
+    }
+
+    button {
+      padding: 10px 15px;
+    }
+  }
+
+  .photo-shadow {
+    width: 400px;
+    margin-top: -150px;
+  }
+
+  .vector {
+    margin-top: 0px;
+  }
+
+  .hero-footer{
+    margin-top: -100px;
+  }
+}
