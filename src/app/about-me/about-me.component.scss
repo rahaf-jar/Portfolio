@@ -60,3 +60,33 @@
     right: 0;
   }
 }
+
+@media (max-width: 1600px) {
+  .about-me-left-side {
+    width: 420px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .about-me-container {
+    .about-me-left-side {
+      p {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    .about-me-right-side {
+      .circle {
+        width: 300px;
+      }
+
+      .circle-line {
+        width: 130px;
+      }
+    }
+  }
+}
