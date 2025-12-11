@@ -90,3 +90,33 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    .about-me-right-side {
+      .circle {
+        display: none;
+      }
+
+      .circle-line {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me-container {
+    .about-me-left-side {
+      width: 300px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
