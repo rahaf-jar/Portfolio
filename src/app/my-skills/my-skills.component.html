@@ -1,5 +1,5 @@
-<div id="skills" class="my-skills-container padding">
-  <img class="shadow-2" src="assets/imgs/shadows/green-shadow-1.svg" alt="">
+<div id="skills" class="my-skills-container my-skills-desktop padding">
+  <img class="shadow-2" src="assets/imgs/shadows/green-shadow-1.svg" alt="" />
   <div class="skills-container margin-top-110px">
     <div
       class="skill-div"
@@ -23,6 +23,45 @@
       <img src="assets/imgs/lines/my-skills-line.svg" />
     </div>
     <p>{{ translation.t("skills.description") }}</p>
+    <h2 [innerHTML]="translation.t('skills.question')"></h2>
+    <p>{{ translation.t("skills.followup") }}</p>
+
+    <div class="my-skills-button">
+      <button (click)="scroll.scrollTo('contact')">Get in touch</button>
+    </div>
+  </div>
+</div>
+
+<div id="skills" class="my-skills-container my-skills-mobile">
+  <img class="shadow-2" src="assets/imgs/shadows/green-shadow-1.svg" alt="" />
+  <div class="my-skills-header margin-top-110px">
+    <h1>{{ translation.t("skills.title") }}</h1>
+    <img src="assets/imgs/lines/my-skills-line.svg" />
+  </div>
+  <div class="skills-container margin-top-110px">
+    <p>{{ translation.t("skills.description") }}</p>
+    <div class="skills-div-mobile">
+      <div
+        class="skill-div"
+        *ngFor="let skill of skills"
+        [ngClass]="{
+          'special-skill-div': skill.name === 'Continually Learning'
+        }"
+      >
+        <img
+          class="skills"
+          [src]="'assets/imgs/my-skills-icons/' + skill.icon"
+          [alt]="skill.name"
+        />
+        <p
+          [ngClass]="{ 'special-skill': skill.name === 'Continually Learning' }"
+        >
+          {{ skill.name }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="my-skills-right-side">
     <h2 [innerHTML]="translation.t('skills.question')"></h2>
     <p>{{ translation.t("skills.followup") }}</p>
 
