@@ -119,3 +119,47 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1600px) {
+  .my-skills-container {
+    .skills-container {
+      max-width: 550px;
+      gap: 20px 60px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .my-skills-container {
+    .my-skills-right-side {
+      max-width: 350px;
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      button {
+        padding: 10px 15px;
+        font-size: 16px;
+      }
+    }
+
+    .skills-container {
+      max-width: 450px;
+      gap: 20px 30px;
+
+      .skill-div {
+        p {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
