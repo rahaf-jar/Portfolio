@@ -1,19 +1,22 @@
 <div id="portfolio" class="portfolio">
   <div class="portfolio-header margin-top-110px">
-    <img class="small-line" src="assets/imgs/lines/portfolio-small-line.svg" />
-    <h1>{{ translation.t('portfolio.title') }}</h1>
-    <img class="long-line" src="assets/imgs/lines/portfolio-long-line.svg" />
+    <div class="portfolio-header-inner">
+      <span class="line small"></span>
+      <h1>Portfolio</h1>
+      <span class="line long"></span>
+    </div>
   </div>
 
   <div class="portfolio-content">
-    <p>{{ translation.t('portfolio.description') }}</p>
+    <p>{{ translation.t("portfolio.description") }}</p>
 
     <app-project-component
       *ngFor="let p of projects; let i = index"
       [project]="p"
       [reverse]="i % 2 === 1"
+      class="project"
     >
     </app-project-component>
   </div>
-  <img class="shadow-3" src="assets/imgs/shadows/green-shadow-2.svg" alt="">
+  <img class="shadow-3" src="assets/imgs/shadows/green-shadow-2.svg" alt="" />
 </div>
