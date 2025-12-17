@@ -86,7 +86,6 @@
 }
 
 @media (max-width: 700px) {
-
   .portfolio-header {
     .portfolio-header-inner {
       gap: 10px;
@@ -108,7 +107,6 @@
   }
 }
 
-
 @media (max-width: 500px) {
   .portfolio-header {
     .portfolio-header-inner {
@@ -123,6 +121,13 @@
       .line.small {
         width: 40px;
       }
+    }
+  }
+
+  .portfolio {
+    .shadow-3 {
+      width: 200px;
+      margin-top: 600px;
     }
   }
 }
