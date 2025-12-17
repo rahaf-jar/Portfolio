@@ -86,3 +86,15 @@
   height: auto;
   z-index: 0;
 }
+
+@media (max-width: 1000px) {
+  .shadow-4 {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .shadow-4 {
+    width: 350px;
+  }
+}
