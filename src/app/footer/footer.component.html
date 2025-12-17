@@ -1,5 +1,5 @@
 <div class="footer-shadow-wrapper">
-  <img class="shadow-4" src="assets/imgs/shadows/purple-shadow-3.svg" alt="">
+  <img class="shadow-4" src="assets/imgs/shadows/purple-shadow-3.svg" alt="" />
 </div>
 
 <div id="footer" class="footer">
@@ -14,7 +14,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      {{ translation.t('footer.legal_notice') }}
+      {{ translation.t("footer.legal_notice") }}
     </a>
   </div>
 
@@ -41,4 +41,45 @@
       <img src="assets/imgs/socialmedia/linkedin-button.svg" alt="LinkedIn" />
     </a>
   </div>
+</div>
+
+<div id="footer" class="footer-mobile">
+  <div class="logo-side">
+    <a href="">
+      <img class="logo" src="assets/imgs/remaining-icons/logo.svg" alt="" />
+    </a>
+  </div>
+
+  <div class="copy-right">©Rahaf Jarrous 2025</div>
+
+  <div class="social-media-icons">
+    <a
+      href="https://github.com/rahaf-jar"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/imgs/socialmedia/github-button.svg" alt="GitHub" />
+    </a>
+    <img
+      (click)="navigateToSection('contact')"
+      src="assets/imgs/socialmedia/email-button.svg"
+      alt=""
+    />
+    <a
+      href="https://www.linkedin.com/in/rahaf-jarrous-97277527b/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/imgs/socialmedia/linkedin-button.svg" alt="LinkedIn" />
+    </a>
+  </div>
+
+  <a
+    class="legal-notice"
+    routerLink="/legal-notice"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {{ translation.t("footer.legal_notice") }}
+  </a>
 </div>
