@@ -292,5 +292,19 @@
         font-size: 40px;
       }
     }
+
+    .my-skills-right-side {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .my-skills-container {
+    .shadow-2 {
+      left: -50px;
+      width: 200px;
+      margin-top: 450px;
+    }
   }
 }
