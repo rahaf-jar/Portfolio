@@ -1,18 +1,20 @@
 <div class="header">
   <div class="header-content">
-    <a href=""><img src="assets/imgs/remaining-icons/logo.svg" alt="logo" /></a>
+    <a href="">
+      <img src="assets/imgs/remaining-icons/logo.svg" alt="logo" />
+    </a>
 
     <div class="header-right">
       <div class="links">
-        <span (click)="navigateToSection('about_me')">{{
-          translation.t("header.about_me")
-        }}</span>
-        <span (click)="navigateToSection('skills')">{{
-          translation.t("header.skills")
-        }}</span>
-        <span (click)="navigateToSection('portfolio')">{{
-          translation.t("header.portfolio")
-        }}</span>
+        <span (click)="navigateToSection('about_me')">
+          {{ translation.t("header.about_me") }}
+        </span>
+        <span (click)="navigateToSection('skills')">
+          {{ translation.t("header.skills") }}
+        </span>
+        <span (click)="navigateToSection('portfolio')">
+          {{ translation.t("header.portfolio") }}
+        </span>
       </div>
 
       <div class="translate">
@@ -29,6 +31,54 @@
           EN
         </button>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-mobile">
+  <div class="header-content">
+    <a href="">
+      <img src="assets/imgs/remaining-icons/logo.svg" alt="logo" />
+    </a>
+
+    <div class="header-right">
+      <img
+        src="assets/imgs/remaining-icons/burger-menu.svg"
+        alt="menu"
+        (click)="toggleMenu()"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="mobile-overlay" *ngIf="isMenuOpen">
+  <div class="overlay-content">
+    <span (click)="onOverlayNavigate('about_me')">
+      {{ translation.t("header.about_me") }}
+    </span>
+    <span (click)="onOverlayNavigate('skills')">
+      {{ translation.t("header.skills") }}
+    </span>
+    <span (click)="onOverlayNavigate('portfolio')">
+      {{ translation.t("header.portfolio") }}
+    </span>
+    <span (click)="onOverlayNavigate('contact')">
+      {{ translation.t("header.contact") }}
+    </span>
+
+    <div class="overlay-translate">
+      <button
+        [class.active]="selectedLang === 'DE'"
+        (click)="setLanguage('DE')"
+      >
+        DE
+      </button>
+      <button
+        [class.active]="selectedLang === 'EN'"
+        (click)="setLanguage('EN')"
+      >
+        EN
+      </button>
     </div>
   </div>
 </div>

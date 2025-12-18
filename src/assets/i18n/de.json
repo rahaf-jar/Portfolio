@@ -1,8 +1,9 @@
 {
   "header": {
     "about_me": "Über mich",
-    "skills": "Skills",
-    "portfolio": "Portfolio"
+    "skills": "meine Skills",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
   },
 
   "footer": {
