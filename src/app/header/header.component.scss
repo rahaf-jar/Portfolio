@@ -62,11 +62,11 @@ body.no-scroll {
           color: white;
           padding: 5px 8px;
           border-radius: 10px;
+          transition: color 0.3s;
 
           &.active {
-            background-color: hsl(95, 80%, 51%);
-            color: black;
-            font-weight: 800;
+            color: hsl(95, 80%, 51%);
+            font-weight: 700;
           }
         }
       }
@@ -121,37 +121,54 @@ body.no-scroll {
   align-items: center;
   gap: 32px;
   margin-top: -50px;
+}
 
-  span {
-    color: white;
-    font-size: 28px;
-    font-weight: 300;
-    cursor: pointer;
+.overlay-content .menu-link {
+  position: relative;
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.3s;
 
-    &:hover {
-      color: hsl(95, 80%, 51%);
-    }
+  &:hover {
+    color: hsl(95, 80%, 51%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 4px;
+    background-color: hsl(260, 70%, 50%);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 50%;
   }
 }
 
-.overlay-translate {
-  display: flex;
-  gap: 16px;
-  margin-top: 40px;
+.overlay-translate span {
+  cursor: pointer;
+  background: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 10px;
+  font-size: 28px;
+  line-height: 1.2;
+  transition: color 0.3s;
 
-  button {
-    background: none;
-    border: 1px solid hsl(95, 80%, 51%);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 10px;
-    cursor: pointer;
+  &:hover {
+    color: hsl(95, 80%, 51%);
+  }
 
-    &.active {
-      background-color: hsl(95, 80%, 51%);
-      color: black;
-      font-weight: 800;
-    }
+  &.active {
+    color: hsl(95, 80%, 51%);
+    font-weight: 700;
   }
 }
 

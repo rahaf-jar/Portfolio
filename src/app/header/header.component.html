@@ -53,32 +53,27 @@
 
 <div class="mobile-overlay" *ngIf="isMenuOpen">
   <div class="overlay-content">
-    <span (click)="onOverlayNavigate('about_me')">
+    <span class="menu-link" (click)="onOverlayNavigate('about_me')">
       {{ translation.t("header.about_me") }}
     </span>
-    <span (click)="onOverlayNavigate('skills')">
+    <span class="menu-link" (click)="onOverlayNavigate('skills')">
       {{ translation.t("header.skills") }}
     </span>
-    <span (click)="onOverlayNavigate('portfolio')">
+    <span class="menu-link" (click)="onOverlayNavigate('portfolio')">
       {{ translation.t("header.portfolio") }}
     </span>
-    <span (click)="onOverlayNavigate('contact')">
+    <span class="menu-link" (click)="onOverlayNavigate('contact')">
       {{ translation.t("header.contact") }}
     </span>
 
     <div class="overlay-translate">
-      <button
-        [class.active]="selectedLang === 'DE'"
-        (click)="setLanguage('DE')"
-      >
+      <span [class.active]="selectedLang === 'DE'" (click)="setLanguage('DE')">
         DE
-      </button>
-      <button
-        [class.active]="selectedLang === 'EN'"
-        (click)="setLanguage('EN')"
-      >
+      </span> 
+      <span>/</span>
+      <span [class.active]="selectedLang === 'EN'" (click)="setLanguage('EN')">
         EN
-      </button>
+      </span>
     </div>
   </div>
 </div>
