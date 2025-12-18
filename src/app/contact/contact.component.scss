@@ -214,6 +214,19 @@ button {
   transition: opacity 0.3s;
 }
 
+.footer-shadow-wrapper {
+  position: relative;
+}
+
+.shadow-4 {
+  position: absolute;
+  bottom: -1100px;
+  left: 0;
+  width: 450px;
+  height: auto;
+  z-index: 0;
+}
+
 @media (max-width: 1200px) {
   .contact-header {
     h1 {
@@ -244,6 +257,10 @@ button {
   .contact-form {
     width: 100%;
     max-width: 600px;
+  }
+
+  .shadow-4 {
+    bottom: -1400px;
   }
 }
 
@@ -298,5 +315,10 @@ button {
       font-size: 16px;
       padding: 10px 20px;
     }
+  }
+
+  .shadow-4 {
+    bottom: -1250px;
+    width: 200px;
   }
 }
