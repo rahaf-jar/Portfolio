@@ -1,58 +1,66 @@
-<div class="legal-notice-container">
-  <h1>{{ translation.t("legal.title") }}</h1>
+<div class="legal-notice">
+  <div class="legal-header margin-top-110px">
+    <div class="legal-header-inner">
+      <span class="line small"></span>
+      <h1>{{ translation.t("legal.title") }}</h1>
+      <span class="line long"></span>
+    </div>
+  </div>
 
-  <section>
-    <h2>{{ translation.t("legal.imprint.title") }}</h2>
-    <ul>
-      <li>{{ translation.t("legal.imprint.name") }}</li>
-      <li>{{ translation.t("legal.imprint.street") }}</li>
-      <li>{{ translation.t("legal.imprint.city") }}</li>
-    </ul>
-  </section>
+  <div class="legal-notice-container">
+    <section>
+      <h2>{{ translation.t("legal.imprint.title") }}</h2>
+      <ul>
+        <li>{{ translation.t("legal.imprint.name") }}</li>
+        <li>{{ translation.t("legal.imprint.street") }}</li>
+        <li>{{ translation.t("legal.imprint.city") }}</li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>{{ translation.t("legal.exploring.title") }}</h3>
-    <p>
+    <section>
+      <h3>{{ translation.t("legal.exploring.title") }}</h3>
+      <p>
+        <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+      </p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.acceptance.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.acceptance.text')"></p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.scope.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.scope.text1')"></p>
+      <p [innerHTML]="translation.t('legal.scope.text2')"></p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.proprietary.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.proprietary.text')"></p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.use.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.use.text')"></p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.disclaimer.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.disclaimer.text')"></p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("legal.indemnity.title") }}</h3>
+      <p [innerHTML]="translation.t('legal.indemnity.text')"></p>
+    </section>
+
+    <p class="footer-text">
+      {{ translation.t("legal.footer.pre") }}
       <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+      {{ translation.t("legal.footer.post") }}
     </p>
-  </section>
 
-  <section>
-    <h3>{{ translation.t("legal.acceptance.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.acceptance.text')"></p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("legal.scope.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.scope.text1')"></p>
-    <p [innerHTML]="translation.t('legal.scope.text2')"></p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("legal.proprietary.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.proprietary.text')"></p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("legal.use.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.use.text')"></p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("legal.disclaimer.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.disclaimer.text')"></p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("legal.indemnity.title") }}</h3>
-    <p [innerHTML]="translation.t('legal.indemnity.text')"></p>
-  </section>
-
-  <p class="footer-text">
-    {{ translation.t("legal.footer.pre") }}
-    <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
-    {{ translation.t("legal.footer.post") }}
-  </p>
-
-  <p class="date">{{ translation.t("legal.date") }}</p>
+    <p class="date">{{ translation.t("legal.date") }}</p>
+  </div>
 </div>
