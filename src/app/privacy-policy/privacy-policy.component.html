@@ -1,74 +1,82 @@
-<div class="legal-notice-container">
-  <h1>{{ translation.t("privacy.title") }}</h1>
+<div class="privacy-policy">
+  <div class="privacy-header margin-top-110px">
+    <div class="privacy-header-inner">
+      <span class="line small"></span>
+      <h1>{{ translation.t("privacy.title") }}</h1>
+      <span class="line long"></span>
+    </div>
+  </div>
 
-  <section>
-    <h2>{{ translation.t("privacy.controller.title") }}</h2>
-    <ul>
-      <li>{{ translation.t("privacy.controller.name") }}</li>
-      <li>{{ translation.t("privacy.controller.street") }}</li>
-      <li>{{ translation.t("privacy.controller.city") }}</li>
-      <li>
-        <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
-      </li>
-    </ul>
-  </section>
+  <div class="privacy-policy-container">
+    <section>
+      <h2>{{ translation.t("privacy.controller.title") }}</h2>
+      <ul>
+        <li>{{ translation.t("privacy.controller.name") }}</li>
+        <li>{{ translation.t("privacy.controller.street") }}</li>
+        <li>{{ translation.t("privacy.controller.city") }}</li>
+        <li>
+          <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>{{ translation.t("privacy.collection.title") }}</h3>
-    <p>{{ translation.t("privacy.collection.text") }}</p>
-    <ul>
-      <li>
-        <span class="highlight">{{ translation.t("privacy.collection.contactData.title") }}</span>:
-        {{ translation.t("privacy.collection.contactData.text") }}
-      </li>
-      <li>
-        <span class="highlight">{{ translation.t("privacy.collection.technicalData.title") }}</span>:
-        {{ translation.t("privacy.collection.technicalData.text") }}
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h3>{{ translation.t("privacy.collection.title") }}</h3>
+      <p>{{ translation.t("privacy.collection.text") }}</p>
+      <ul>
+        <li>
+          <span class="highlight">{{ translation.t("privacy.collection.contactData.title") }}</span>:
+          {{ translation.t("privacy.collection.contactData.text") }}
+        </li>
+        <li>
+          <span class="highlight">{{ translation.t("privacy.collection.technicalData.title") }}</span>:
+          {{ translation.t("privacy.collection.technicalData.text") }}
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>{{ translation.t("privacy.purpose.title") }}</h3>
-    <p [innerHTML]="translation.t('privacy.purpose.text')"></p>
-  </section>
+    <section>
+      <h3>{{ translation.t("privacy.purpose.title") }}</h3>
+      <p [innerHTML]="translation.t('privacy.purpose.text')"></p>
+    </section>
 
-  <section>
-    <h3>{{ translation.t("privacy.sharing.title") }}</h3>
-    <p>{{ translation.t("privacy.sharing.text") }}</p>
-  </section>
+    <section>
+      <h3>{{ translation.t("privacy.sharing.title") }}</h3>
+      <p>{{ translation.t("privacy.sharing.text") }}</p>
+    </section>
 
-  <section>
-    <h3>{{ translation.t("privacy.rights.title") }}</h3>
-    <p>{{ translation.t("privacy.rights.text1") }}</p>
-    <p>
-      <span class="highlight">
-        <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
-      </span>
-      {{ translation.t("privacy.rights.text2") }}
+    <section>
+      <h3>{{ translation.t("privacy.rights.title") }}</h3>
+      <p>{{ translation.t("privacy.rights.text1") }}</p>
+      <p>
+        <span class="highlight">
+          <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+        </span>
+        {{ translation.t("privacy.rights.text2") }}
+      </p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("privacy.security.title") }}</h3>
+      <p>{{ translation.t("privacy.security.text") }}</p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("privacy.retention.title") }}</h3>
+      <p>{{ translation.t("privacy.retention.text") }}</p>
+    </section>
+
+    <section>
+      <h3>{{ translation.t("privacy.external.title") }}</h3>
+      <p>{{ translation.t("privacy.external.text") }}</p>
+    </section>
+
+    <p class="footer-text">
+      {{ translation.t("privacy.footer.pre") }}
+      <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
+      {{ translation.t("privacy.footer.post") }}
     </p>
-  </section>
 
-  <section>
-    <h3>{{ translation.t("privacy.security.title") }}</h3>
-    <p>{{ translation.t("privacy.security.text") }}</p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("privacy.retention.title") }}</h3>
-    <p>{{ translation.t("privacy.retention.text") }}</p>
-  </section>
-
-  <section>
-    <h3>{{ translation.t("privacy.external.title") }}</h3>
-    <p>{{ translation.t("privacy.external.text") }}</p>
-  </section>
-
-  <p class="footer-text">
-    {{ translation.t("privacy.footer.pre") }}
-    <a (click)="navigateToSection('contact')">jarrousrahaf&#64;gmail.com</a>
-    {{ translation.t("privacy.footer.post") }}
-  </p>
-
-  <p class="date">{{ translation.t("privacy.date") }}</p>
+    <p class="date">{{ translation.t("privacy.date") }}</p>
+  </div>
 </div>

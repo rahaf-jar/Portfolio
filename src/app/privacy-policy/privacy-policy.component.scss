@@ -1,39 +1,54 @@
-.legal-notice-container {
-  background-color: hsl(220, 40%, 13%);
+.privacy-policy {
   position: relative;
+  width: 100%;
+}
+
+.privacy-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.privacy-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-left: auto;
+  width: fit-content;
+
+  h1 {
+    color: hsl(95, 80%, 51%);
+    font-size: 70px;
+    white-space: nowrap;
+  }
+
+  .line {
+    height: 4px;
+    background-color: hsl(266, 100%, 64%);
+    border-radius: 10px;
+  }
+
+  .line.small {
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .line.long {
+    width: 80%;
+    min-width: 450px;
+  }
+}
+
+.privacy-policy-container {
+  background-color: hsl(220, 40%, 13%);
   max-width: 1920px;
   color: white;
   padding: 60px 120px;
   line-height: 1.6;
+}
 
-  h1 {
-    color: hsl(95, 80%, 51%);
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 120px;
-      height: 3px;
-      background-color: hsl(266, 100%, 64%);
-      border-radius: 10px;
-    }
-
-    &::before {
-      left: calc(50% - 250px);
-    }
-
-    &::after {
-      width: 1200px;
-      right: calc(50% - 1330px);
-    }
-  }
-
+.privacy-policy-container {
   h2 {
     color: hsl(266, 100%, 64%);
     font-size: 24px;
@@ -78,6 +93,73 @@
   }
 }
 
-.shadow-4{
-  display: none;
+@media (max-width: 1200px) {
+  .privacy-header-inner {
+    h1 {
+      font-size: 50px;
+    }
+    .line.long {
+      min-width: 300px;
+    }
+
+    .line.small {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .privacy-header-inner {
+    h1 {
+      font-size: 40px;
+    }
+
+    .line.long {
+      min-width: 250px;
+    }
+
+    .line.small {
+      width: 50px;
+    }
+  }
+
+  .privacy-policy-container {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .privacy-header-inner {
+    gap: 10px;
+
+    .line.long {
+      min-width: 150px;
+    }
+
+    .line.small {
+      width: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .privacy-header-inner {
+    h1 {
+      font-size: 24px;
+    }
+
+    .line.long {
+      min-width: 100px;
+    }
+
+    .line.small {
+      width: 20px;
+    }
+  }
+
+  p,
+  li,
+  span {
+    font-size: 14px;
+  }
 }
