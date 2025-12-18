@@ -58,6 +58,8 @@
 
   .my-skills-right-side {
     max-width: 450px;
+    position: relative;
+    z-index: 1;
 
     .my-skills-header {
       display: flex;

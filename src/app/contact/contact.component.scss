@@ -161,6 +161,8 @@ button {
   display: flex;
   justify-content: center;
   align-self: flex-end;
+  position: relative;
+  z-index: 1;
   cursor: pointer;
 
   img {
