@@ -9,7 +9,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [RouterModule, NgIf],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnDestroy {
   selectedLang: 'EN' | 'DE' = 'DE';
@@ -21,7 +21,7 @@ export class HeaderComponent implements OnDestroy {
     public translation: TranslationService
   ) {
     this.translation.currentLang$.subscribe(
-      lang => (this.selectedLang = lang)
+      (lang) => (this.selectedLang = lang)
     );
   }
 
@@ -30,10 +30,8 @@ export class HeaderComponent implements OnDestroy {
 
     if (this.isMenuOpen) {
       document.body.classList.add('no-scroll');
-      document.documentElement.classList.add('no-scroll');
     } else {
       document.body.classList.remove('no-scroll');
-      document.documentElement.classList.remove('no-scroll');
     }
   }
 
