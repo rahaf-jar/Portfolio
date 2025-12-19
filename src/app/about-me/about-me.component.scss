@@ -134,11 +134,16 @@
     }
 
     .about-me-right-side {
+      display: none;
       .circle {
         display: none;
       }
 
       .circle-line {
+        display: none;
+      }
+
+      .me2{
         display: none;
       }
     }
