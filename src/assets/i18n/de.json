@@ -11,9 +11,10 @@
   },
 
   "hero": {
+    "bin": "b i n",
+    "talk": "Kontakt",
     "frontend_developer": "FRONTEND-ENTWICKLER"
   },
-
   "about_me": {
     "title": "Über mich",
     "paragraph1": "Ich liebe es, Ideen in echte Projekte umzusetzen. Programmieren macht mir genauso Spaß wie Kochen — ausprobieren, verbessern und Sachen so lange formen, bis sie passen.",
@@ -26,9 +27,9 @@
     "title": "Meine Skills",
     "description": "Ich habe praktische Erfahrung mit verschiedenen Frontend-Tools — von JavaScript und Angular bis zu Scrum — und kann damit interaktive und responsive Erlebnisse gestalten.",
     "question": "Auf der Suche nach <span class='highlight'>einer anderen Fähigkeit?</span>",
-    "followup": "Melde dich gern — ich lerne immer gern Neues dazu."
+    "followup": "Melde dich gern — ich lerne immer gern Neues dazu.",
+    "touch": "Schreib mir"
   },
-
   "portfolio": {
     "title": "Portfolio",
     "description": "Hier findest du eine Auswahl meiner Projekte – Interagiere mit ihnen, um meine Skills in Aktion zu sehen",
