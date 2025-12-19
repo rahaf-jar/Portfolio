@@ -14,6 +14,14 @@
   margin-top: -50px;
 }
 
+.me1{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin-left: -650px;
+}
+
 .hero-footer {
   display: flex;
   justify-content: space-between;
@@ -119,7 +127,7 @@
         font-size: 50px;
 
         .frontend-developer {
-          font-size: 33.7px;
+          font-size: 31px;
         }
       }
     }
