@@ -12,7 +12,7 @@
 
   "hero": {
     "bin": "b i n",
-    "talk": "Kontakt",
+    "talk": "Schreib mir",
     "frontend_developer": "FRONTEND-ENTWICKLER"
   },
   "about_me": {
@@ -28,7 +28,7 @@
     "description": "Ich habe praktische Erfahrung mit verschiedenen Frontend-Tools — von JavaScript und Angular bis zu Scrum — und kann damit interaktive und responsive Erlebnisse gestalten.",
     "question": "Auf der Suche nach <span class='highlight'>einer anderen Fähigkeit?</span>",
     "followup": "Melde dich gern — ich lerne immer gern Neues dazu.",
-    "touch": "Schreib mir"
+    "touch": "Los geht’s"
   },
   "portfolio": {
     "title": "Portfolio",
