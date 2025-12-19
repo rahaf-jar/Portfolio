@@ -35,12 +35,14 @@
 
   a {
     color: hsl(0, 0%, 100%);
+    align-self: center;
   }
 
   .scroll-down {
     cursor: pointer;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
     rotate: 180deg;
+    margin-top: -5px;
 
     &:hover {
       transform: translateY(-1px) scale(1.1);
@@ -56,8 +58,10 @@
       height: 30px;
       cursor: pointer;
       transition: transform 0.3s ease;
+      display: flex;
+      align-self: center;
     }
-
+    
     .social-media-icon:hover {
       transform: scale(1.4);
     }
