@@ -185,3 +185,17 @@ body.no-scroll {
     display: flex;
   }
 }
+
+@media (max-width: 500px) {
+  .header-mobile {
+    .header-content {
+      img {
+        height: 40px;
+      }
+
+      .header-right img {
+        height: 25px;
+      }
+    }
+  }
+}
