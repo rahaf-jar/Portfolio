@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
   }
 
   .shadow-3 {
@@ -83,6 +83,13 @@
       }
     }
   }
+
+  .portfolio-content {
+    p {
+      text-align: center;
+      padding: 0px 15px;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -96,13 +103,6 @@
       .line.small {
         width: 50px;
       }
-    }
-  }
-
-  .portfolio-content {
-    p {
-      max-width: 390px;
-      text-align: center;
     }
   }
 }
