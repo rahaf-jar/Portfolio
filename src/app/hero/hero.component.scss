@@ -265,7 +265,7 @@
   .me1 {
     width: 300px;
     right: 100px;
-    bottom: 300px;
+    bottom: 400px;
   }
 
   .photo-shadow {
@@ -294,23 +294,5 @@
 @media (max-width: 400px) {
   .me1 {
     right: 30px;
-  }
-}
-
-@media (min-height: 667px) {
-  .me1 {
-    bottom: 100px;
-  }
-}
-
-@media (min-height: 844px) {
-  .me1 {
-    bottom: 300px;
-  }
-}
-
-@media (min-height: 896px) {
-  .me1 {
-    bottom: 350px;
   }
 }
