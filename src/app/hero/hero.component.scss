@@ -14,8 +14,8 @@
   margin-top: -50px;
 }
 
-.me1{
-  width: 400px;
+.me1 {
+  width: 700px;
   height: auto;
   position: absolute;
   z-index: 0;
@@ -146,8 +146,16 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .me1 {
+    width: 500px;
+    margin-left: -600px;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-right-side {
+    margin-right: 100px;
     .name-area {
       span {
         font-size: 35px;
@@ -168,8 +176,8 @@
   }
 
   .photo-shadow {
-    width: 400px;
-    margin-top: -150px;
+    width: 500px;
+    margin-top: -50px;
   }
 
   .vector {
@@ -178,6 +186,11 @@
 
   .hero-footer {
     margin-top: -100px;
+  }
+
+  .me1 {
+    width: 400px;
+    margin-left: -500px;
   }
 }
 
@@ -209,17 +222,48 @@
   .email {
     display: none;
   }
+
+  .me1 {
+    width: 450px;
+    right: 250px;
+    bottom: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .me1 {
+    width: 450px;
+    right: 200px;
+    bottom: 250px;
+  }
 }
 
 @media (max-width: 700px) {
   .vector {
     margin-top: 80px;
   }
+
+  .me1 {
+    width: 450px;
+    right: 150px;
+  }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 620px) {
+  .me1 {
+    right: 100px;
+  }
+}
+
+@media (max-width: 500px) {
   .vector {
     margin-top: 0px;
+  }
+
+  .me1 {
+    width: 300px;
+    right: 100px;
+    bottom: 400px;
   }
 
   .photo-shadow {
@@ -242,5 +286,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .me1 {
+    right: 30px;
   }
 }
