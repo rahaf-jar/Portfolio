@@ -12,8 +12,10 @@ body.no-scroll {
   display: flex;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  max-width: 1920px;
+  transform: translateX(-50%);
   height: 110px;
   z-index: 1000;
   background-color: hsl(220, 40%, 13%);
@@ -79,15 +81,17 @@ body.no-scroll {
 }
 
 .header-mobile {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  max-width: 1920px;
+  transform: translateX(-50%);
   height: 110px;
   z-index: 1000;
   background-color: hsl(220, 40%, 13%);
-  padding: 37px 40px;
+  padding: 37px 100px;
 
   .header-content {
     display: flex;

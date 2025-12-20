@@ -1,11 +1,3 @@
-html.no-scroll,
-body.no-scroll {
-  overflow: hidden;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-}
-
 html,
 body {
   font-family: "Poppins";
@@ -18,25 +10,16 @@ body {
   background-color: hsl(220, 40%, 13%);
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins-Light";
-  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+* {
+  box-sizing: border-box;
 }
 
 .app-background {
@@ -44,18 +27,26 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.container {
+  position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+app-header,
+main,
+app-footer {
   width: 100%;
 }
 
 main {
   flex: 1;
   padding-top: 110px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
 }
 
 a {
@@ -99,9 +90,29 @@ h1 {
 
 .link {
   color: hsl(195, 100%, 70%);
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
