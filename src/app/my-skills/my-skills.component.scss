@@ -182,6 +182,7 @@
 
       p {
         font-size: 16px;
+        padding: 0 20px;
       }
 
       h2 {
@@ -227,7 +228,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px 180px;
         gap: 10px 30px;
 
         .skill-div {
@@ -262,13 +262,7 @@
 
     .skills-container {
       .skills-div-mobile {
-        min-width: 300px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 180px;
-        gap: 10px 30px;
-
+        padding: 10px 150px;
         .skill-div {
           .skills {
             width: 40px;
@@ -291,7 +285,7 @@
   .my-skills-mobile {
     .my-skills-header {
       h1 {
-        font-size: 40px;
+        font-size: 35px;
       }
     }
 
