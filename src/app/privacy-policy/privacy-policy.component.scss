@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-top: -100px;
 
   margin-left: auto;
   width: fit-content;
@@ -111,7 +112,7 @@
 @media (max-width: 1000px) {
   .privacy-header-inner {
     h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     .line.long {
@@ -132,6 +133,10 @@
   .privacy-header-inner {
     gap: 10px;
 
+    h1{
+      font-size: 24px;
+    }
+
     .line.long {
       min-width: 150px;
     }
@@ -145,18 +150,24 @@
 @media (max-width: 500px) {
   .privacy-header-inner {
     h1 {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .line.long {
-      min-width: 100px;
+      min-width: 40px;
     }
 
     .line.small {
-      width: 20px;
+      width: 15px;
     }
   }
 
+  .privacy-policy-container{
+    ul {
+    margin-left: 0;
+  }
+  
+  }
   p,
   li,
   span {
