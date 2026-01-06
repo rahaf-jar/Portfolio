@@ -24,7 +24,7 @@
     </div>
     <p>{{ translation.t("skills.description") }}</p>
     <h2 [innerHTML]="translation.t('skills.question')"></h2>
-    <p class="typing-text">
+    <p>
       {{ translation.t("skills.followup") }}
     </p>
 
@@ -67,12 +67,12 @@
   </div>
   <div class="my-skills-right-side">
     <h2 [innerHTML]="translation.t('skills.question')"></h2>
-    <p class="typing-text">
+    <p>
       {{ translation.t("skills.followup") }}
     </p>
 
     <div class="my-skills-button">
-      <button (click)="scroll.scrollTo('contact')">
+      <button class="shaky-button" (click)="scroll.scrollTo('contact')">
         {{ translation.t("skills.touch") }}
       </button>
     </div>
