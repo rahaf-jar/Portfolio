@@ -1,0 +1,166 @@
+{
+  "header": {
+    "about_me": "Über mich",
+    "skills": "meine Skills",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+
+  "footer": {
+    "legal_notice": "Impressum"
+  },
+
+  "hero": {
+    "bin": "b i n",
+    "talk": "Schreib mir",
+    "frontend_developer": "FRONTEND-ENTWICKLER"
+  },
+  "about_me": {
+    "title": "Über mich",
+    "paragraph1": "Ich liebe es, Ideen in echte Projekte umzusetzen. Programmieren macht mir genauso Spaß wie Kochen — ausprobieren, verbessern und Sachen so lange formen, bis sie passen.",
+    "paragraph2": "Ich wohne in Regensburg und bin offen für Remote- oder Hybridarbeit — so kann ich meine beste Arbeit abliefern.",
+    "paragraph3": "Ich entdecke gern neue Technologien und erweitere mein Können Schritt für Schritt — immer weiter lernen hält mich motiviert.",
+    "paragraph4": "Aus jedem Fehler lerne ich etwas. Sozusagen mein eingebautes Upgrade-System — mit jeder Version werde ich ein Stück besser."
+  },
+
+  "skills": {
+    "title": "Meine Skills",
+    "description": "Ich habe praktische Erfahrung mit verschiedenen Frontend-Tools — von JavaScript und Angular bis zu Scrum — und kann damit interaktive und responsive Erlebnisse gestalten.",
+    "question": "Auf der Suche nach <span class='highlight'>einer anderen Fähigkeit?</span>",
+    "followup": "Melde dich gern — ich lerne immer gern Neues dazu.",
+    "touch": "Los geht’s"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Hier findest du eine Auswahl meiner Projekte – Interagiere mit ihnen, um meine Skills in Aktion zu sehen",
+    "projects": {
+      "join": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+      "elPollo": "Springen, rennen und werfen Spiel auf objektorientierter Basis. Hilf Pepe, Münzen zu sammeln und Tabasco-Sauce gegen die verrückte Henne einzusetzen."
+    }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "h2": "Hast du ein Projekt oder eine Idee?",
+    "p1": "Melde dich gerne, wenn du Unterstützung bei einem Projekt brauchst oder eine spannende Gelegenheit hast. Ich zeige dir, wie meine Arbeit deinem Vorhaben Mehrwert bringen kann.",
+    "p2": "Frontend-Entwickler gesucht? <b>Kontaktiere mich!</b>",
+    "form": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail-Adresse",
+      "message": "Deine Nachricht",
+      "button": "Nachricht senden :)",
+      "privacy": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+      "errors": {
+        "name": "Dein Name muss mindestens 3 Buchstaben enthalten",
+        "email": "Bitte gib eine gültige E-Mail-Adresse ein",
+        "message": "Deine Nachricht muss mindestens 10 Zeichen enthalten",
+        "privacy": "Bitte akzeptiere die Datenschutzrichtlinie"
+      }
+    }
+  },
+
+  "legal": {
+    "title": "Impressum",
+    "imprint": {
+      "title": "Impressum",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg"
+    },
+    "exploring": {
+      "title": "Erreichbarkeit"
+    },
+    "acceptance": {
+      "title": "Akzeptanz der Bedingungen",
+      "text": "Durch den Zugriff auf und die Nutzung von <span class='highlight'>Portfolio</span> (Produkt) erkennst du die folgenden Bedingungen sowie alle Richtlinien, Ergänzungen oder Änderungen an, die dir gelegentlich präsentiert werden können, an und stimmst ihnen zu. Wir, die aufgeführten Studierenden, können diese Bedingungen jederzeit ohne vorherige Ankündigung aktualisieren oder ändern."
+    },
+    "scope": {
+      "title": "Umfang und Eigentum des Produkts",
+      "text1": "<span class='highlight'>Portfolio</span> wurde im Rahmen eines Studierendenprojekts in einem Webentwicklungs-Bootcamp bei der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a> entwickelt. Es dient ausschließlich Bildungszwecken und ist nicht für umfassende private oder geschäftliche Nutzung vorgesehen. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit oder Genauigkeit des Produkts garantieren.",
+      "text2": "Das Design von <span class='highlight'>Portfolio</span> gehört der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. Eine unautorisierte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist strengstens untersagt."
+    },
+    "proprietary": {
+      "title": "Eigentumsrechte",
+      "text": "Abgesehen vom Design, das der <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a> gehört, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte an <span class='highlight'>Portfolio</span>, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen proprietären Informationen."
+    },
+    "use": {
+      "title": "Nutzung des Produkts",
+      "text": "<span class='highlight'>Portfolio</span> darf ausschließlich zu rechtmäßigen Zwecken und gemäß allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='highlight'>Portfolio</span> für illegale Aktivitäten oder um andere Personen zu belästigen, zu bedrohen, zu schädigen oder einzuschüchtern, ist strengstens untersagt. Du bist allein verantwortlich für deine Interaktionen mit anderen Nutzern von <span class='highlight'>Portfolio</span>."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "text": "<span class='highlight'>Portfolio</span> wird \"wie gesehen\" und ohne jegliche ausdrückliche oder stillschweigende Garantien bereitgestellt, einschließlich, aber nicht beschränkt auf die implizierten Garantien der Marktfähigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften wir, die aufgeführten Studierenden, oder die <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, für direkte, indirekte, zufällige, spezielle, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Goodwill, Datenverluste oder andere immaterielle Schäden, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden."
+    },
+    "indemnity": {
+      "title": "Freistellung",
+      "text": "Du stimmst zu, uns, die aufgeführten Studierenden, die <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a> sowie unsere Partner und Mitarbeiter von allen Ansprüchen, Schäden, Verlusten, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, die aus deiner Nutzung von <span class='highlight'>Portfolio</span> und/oder deinem Verstoß gegen dieses Impressum entstehen."
+    },
+    "footer": {
+      "pre": "Bei Fragen oder Mitteilungen kontaktiere uns bitte unter",
+      "post": "."
+    },
+    "date": "Datum: 30. November 2025"
+  },
+
+  "privacy": {
+    "title": "Datenschutzerklärung",
+
+    "controller": {
+      "title": "Verantwortliche Stelle",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg, Deutschland"
+    },
+
+    "collection": {
+      "title": "Datenerhebung",
+      "text": "Diese Website erhebt ausschließlich die Daten, die für den Betrieb und die Beantwortung von Anfragen erforderlich sind:",
+      "contactData": {
+        "title": "Kontaktdaten",
+        "text": "Name, E-Mail-Adresse und Nachricht, wenn du mich kontaktierst."
+      },
+      "technicalData": {
+        "title": "Technische Daten",
+        "text": "IP-Adresse, Browsertyp, Geräteinformationen — automatisch vom Hosting-Anbieter erfasst, um Funktionalität und Sicherheit zu gewährleisten."
+      }
+    },
+
+    "purpose": {
+      "title": "Zweck & Rechtsgrundlage",
+      "text": "Personenbezogene Daten werden ausschließlich verarbeitet, um diese Website zu betreiben, Anfragen zu beantworten und die technische Sicherheit aufrechtzuerhalten. Rechtsgrundlagen: <span class='highlight'>Art. 6(1)(b)</span> und <span class='highlight'>Art. 6(1)(f)</span> DSGVO."
+    },
+
+    "sharing": {
+      "title": "Datenweitergabe",
+      "text": "Daten werden nur an den Hosting-Anbieter zur technischen Bereitstellung unter DSGVO-konformen Bedingungen weitergegeben. Es erfolgt keine Weitergabe oder kein Verkauf personenbezogener Daten an Dritte zu Marketingzwecken."
+    },
+
+    "rights": {
+      "title": "Deine Rechte",
+      "text1": "Du kannst jederzeit Auskunft, Berichtigung, Löschung oder Einschränkung deiner personenbezogenen Daten verlangen oder der Verarbeitung widersprechen.",
+      "text2": "um mich zu erreichen."
+    },
+
+    "security": {
+      "title": "Sicherheit",
+      "text": "Deine Daten werden durch sicheres Hosting, Zugangskontrollen und geeignete technische Maßnahmen geschützt. Dennoch kann keine Datenübertragung über das Internet als vollständig sicher garantiert werden."
+    },
+
+    "retention": {
+      "title": "Speicherdauer",
+      "text": "Kontaktanfragen werden nur so lange gespeichert, wie es zur Beantwortung notwendig ist. Technische Logdateien werden lediglich kurzfristig für Sicherheits- und Fehlersuche-Zwecke aufbewahrt."
+    },
+
+    "external": {
+      "title": "Externe Links",
+      "text": "Externe Links auf dieser Website können zu anderen Webseiten führen. Für die Datenschutzpraktiken externer Anbieter übernehme ich keine Verantwortung."
+    },
+
+    "footer": {
+      "pre": "Für datenschutzbezogene Fragen oder Anliegen kontaktiere mich bitte unter:",
+      "post": ""
+    },
+
+    "date": "Datum: 30. November 2025"
+  }
+}

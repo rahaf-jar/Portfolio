@@ -1,0 +1,168 @@
+{
+  "header": {
+    "about_me": "About me",
+    "skills": "My skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "legal_notice": "Legal Notice"
+  },
+
+  "hero": {
+    "frontend_developer": "FRONTEND DEVELOPER",
+    "bin": "i am",
+    "talk": "let's talk"
+  },
+
+  "about_me": {
+    "title": "About me",
+    "paragraph1": "I love turning ideas into real projects. Coding gives me the same creative joy as cooking — experimenting, improving, and shaping things until they’re just right.",
+    "paragraph2": "I’m based in Regensburg and fully open to remote or hybrid work—flexibility helps me do my best work.",
+    "paragraph3": "I enjoy exploring new technologies and building up my skill set step by step—continuous learning keeps me motivated.",
+    "paragraph4": "I learn something from every mistake I make. Think of it as my built-in upgrade system—I get a little better with each version."
+  },
+
+  "skills": {
+    "title": "My skills",
+    "description": "I have hands-on experience with a variety of front-end tools — from JavaScript and Angular to Scrum — creating interactive and responsive user experiences.",
+    "question": "Looking for <span class='highlight'>another skill?</span>",
+    "followup": "Feel free to reach out — I’m always excited to learn new things.",
+    "touch": "get in touch"
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Explore a selection of my work here - interact with projects to see my skills in action",
+    "projects": {
+      "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "elPollo": "Jump, run, and throw game based on object-oriented approach. Help Pepe to find coins and Tabasco salsa to fight against the crazy hen"
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "h2": "Have a project or an idea?",
+    "p1": "Feel free to reach out if you need support on a project or have an exciting opportunity. I’ll show you how my work can add value to your endeavor.",
+    "p2": "Need a Frontend developer? <b>Contact me!</b>",
+    "form": {
+      "name": "Your name",
+      "email": "Your email address",
+      "message": "Your message",
+      "button": "Send message :)",
+      "privacy": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "errors": {
+        "name": "Your name must be at least 3 letters",
+        "email": "Please enter a valid email address",
+        "message": "Your message should be at least 10 characters",
+        "privacy": "Please accept the privacy policy"
+      }
+    }
+  },
+
+  "legal": {
+    "title": "Legal Notice",
+    "imprint": {
+      "title": "Imprint",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg"
+    },
+    "exploring": {
+      "title": "Exploring the Board"
+    },
+    "acceptance": {
+      "title": "Acceptance of terms",
+      "text": "By accessing and using <span class='highlight'>Portfolio</span> (Product), you acknowledge and agree to the following terms and any policies or amendments that may be presented from time to time. We, the listed students, may update or change these terms without notice."
+    },
+    "scope": {
+      "title": "Scope and ownership of the product",
+      "text1": "<span class='highlight'>Portfolio</span> was developed as part of a student group project within a web development bootcamp at the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. It serves educational purposes and is not intended for extensive personal or business use. Therefore, we cannot guarantee continuous availability, reliability, or accuracy of the product.",
+      "text2": "The design of <span class='highlight'>Portfolio</span> is owned by the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+    },
+    "proprietary": {
+      "title": "Proprietary rights",
+      "text": "Aside from the design owned by the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie GmbH</a>, we, the listed students, retain all proprietary rights to <span class='highlight'>Portfolio</span>, including all associated copyrighted material, trademarks, and proprietary information."
+    },
+    "use": {
+      "title": "Use of the product",
+      "text": "<span class='highlight'>Portfolio</span> may only be used for lawful purposes and in accordance with applicable laws. Any illegal use or use intended to harass, harm, or intimidate others is strictly prohibited. You are solely responsible for your interactions with other users."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of warranties and limitation of liability",
+      "text": "<span class='highlight'>Portfolio</span> is provided \"as is\" without warranties of any kind, express or implied, including merchantability or fitness for a particular purpose. In no event shall we, the listed students, or the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, be liable for any damages, including lost profits, goodwill, data loss, or other intangible losses."
+    },
+    "indemnity": {
+      "title": "Indemnity",
+      "text": "You agree to indemnify and hold harmless us, the listed students, the <a href='https://developerakademie.com/' target='_blank' rel='noopener noreferrer' class='link'>Developer Akademie</a>, and our affiliates from any claims, losses, or liabilities arising from your use of <span class='highlight'>Portfolio</span> or your violation of this Legal Notice."
+    },
+    "footer": {
+      "pre": "For any questions or notices, please contact us at",
+      "post": "."
+    },
+    "date": "Date: November 30, 2025"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+
+    "controller": {
+      "title": "Controller",
+      "name": "Rahaf Jarrous",
+      "street": "Puricellistraße 20",
+      "city": "93049 Regensburg, Germany"
+    },
+
+    "collection": {
+      "title": "Data Collection",
+      "text": "This website collects only the data necessary to operate and respond to inquiries:",
+      "contactData": {
+        "title": "Contact Data",
+        "text": "name, email address, and message when you contact me."
+      },
+      "technicalData": {
+        "title": "Technical Data",
+        "text": "IP address, browser type, device information — automatically collected by the hosting provider to ensure functionality and security."
+      }
+    },
+
+    "purpose": {
+      "title": "Purpose & Legal Basis",
+      "text": "Personal data is processed solely to operate this website, respond to messages, and maintain technical security. Legal basis: <span class='highlight'>Art. 6(1)(b)</span> and <span class='highlight'>Art. 6(1)(f)</span> GDPR."
+    },
+
+    "sharing": {
+      "title": "Data Sharing",
+      "text": "Data is shared only with the hosting provider for technical operation under GDPR-compliant conditions. No personal data is sold or shared with third parties for marketing."
+    },
+
+    "rights": {
+      "title": "Your Rights",
+      "text1": "You may request access, correction, deletion, or restriction of your personal data, or object to processing at any time.",
+      "text2": "to reach me."
+    },
+
+    "security": {
+      "title": "Security",
+      "text": "Your data is protected through secure hosting, access controls, and appropriate technical measures. However, no internet transmission can be guaranteed as completely secure."
+    },
+
+    "retention": {
+      "title": "Retention",
+      "text": "Contact messages are stored only as long as needed to respond to your inquiry. Technical log files are retained only briefly for security and troubleshooting."
+    },
+
+    "external": {
+      "title": "External Links",
+      "text": "External links on this website may lead to other websites. I am not responsible for the privacy practices of external providers."
+    },
+
+    "footer": {
+      "pre": "For any privacy-related questions or requests, please contact me at:",
+      "post": ""
+    },
+
+    "date": "Date: November 30, 2025"
+  }
+}
