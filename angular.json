@@ -26,8 +26,8 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
             "scripts": [],
-            "baseHref": "/Angular-Projects/portfolio/",
-            "deployUrl": "/Angular-Projects/portfolio/"
+            "baseHref": "/",
+            "deployUrl": "/"
           },
           "configurations": {
             "production": {
