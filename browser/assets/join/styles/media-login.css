@@ -1,0 +1,107 @@
+@media (max-width: 800px) {
+    
+    .loader {
+        background-color:rgba(42, 54, 71, 1);
+    }
+
+    #animated-logo.mobile-white {
+        content: url('./assets/img/1. join-frontpage/join-logo-white.svg');
+   }
+
+    #animated-logo {
+        width: 400.12px;             
+        height: 487.88px;
+        transform: translate(-50%, -50%) scale(0.7); 
+    }
+
+    #animated-logo.logo-finished {
+        top: -166px;
+        left: -132px;
+        transform: scale(0.172); 
+    }
+
+    .logo-image {
+        width: 71px;
+        height: 84px;
+    }
+
+    .logo-section {
+        top: 36px;
+        left: 32px;
+    }
+
+    .register-container {
+        display: none;
+    }
+
+    .register-container-mobile {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .log-in-button {
+        font-size: 18px;
+    }
+
+    .log-in-button,
+    .guest-log-in-button,
+    .register-button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .logo-section {
+        top: 36px;
+        left: 32px;
+    }
+
+    .logo-image {
+    width: 71px;
+    height: 84px;
+    }
+
+    #static-logo {
+    position: absolute;
+    top: 36px;
+    left: 32px;
+    z-index: 999;
+    }
+
+    .log-in-container {
+        padding: 30px 25px;
+        border-radius: 20px;
+    }
+
+    .submit-container {
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+
+    .log-in-button,
+    .guest-log-in-button {
+        padding: 0 10px ;
+        font-size: 16px;
+    }
+
+    .register-button {
+        font-size: 16px;
+    }
+
+    .submit-container {
+        gap: 20px;
+    }
+}
+
+@media (max-height: 800px) {
+    .register-container-mobile {
+        bottom: 80px;
+    }
+
+    footer {
+        bottom: 30px;
+    }
+
+}

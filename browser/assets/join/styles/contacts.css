@@ -1,0 +1,368 @@
+.created-contact-message {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts-list {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 232px;
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.all-contacts {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 56px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacts-list-header {
+  position: sticky;
+  top: 0;
+  background-color: hsl(210, 13%, 97%);
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  padding: 15px 24px;
+  border-radius: 10px;
+  width: 78%;
+  max-width: 352px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 120%;
+  margin-left: 23px;
+}
+
+.contact:hover {
+  background: linear-gradient(180deg, hsla(0, 0%, 98%, 1), hsla(0, 0%, 94%, 1));
+  cursor: pointer;
+}
+
+.contact.open-contact:hover {
+  background: hsl(216, 25%, 22%);
+  color: hsla(0, 0%, 100%, 1);
+  cursor: default;
+}
+
+.open-contact {
+  background-color: hsl(216, 25%, 22%);
+  color: hsla(0, 0%, 100%, 1);
+
+  .contact-name {
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+
+.profile-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.name-and-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name-and-email a {
+  display: inline-block;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.email-and-phone-sub-section a {
+  display: inline-block;
+  min-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-name {
+  color: hsla(0, 0%, 0%, 1);
+}
+
+.my-contact-info {
+  position: fixed;
+  right: 20px;
+  top: 140px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+  width: 569px;
+  height: 73px;
+  position: fixed;
+  top: 206px;
+  left: 743px;
+  gap: 30px;
+}
+
+.Contacts-span {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+.blue-line {
+  height: 59px;
+  border: 3px;
+}
+
+.better-with-a-team-span {
+  font-weight: 400;
+  font-size: 27px;
+  color: hsla(215, 26%, 22%, 1);
+}
+
+.my-contact-information-section {
+  position: fixed;
+  top: 311px;
+  left: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.profile-badge-and-name {
+  height: 120px;
+  width: 452px;
+  gap: 54px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.my-profile-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: rgb(150, 226, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 47px;
+  border: 3px solid hsl(0, 0%, 100%);
+}
+
+.name-section {
+  width: 278px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-name {
+  height: 56px;
+  width: 278px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.Contact-information-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 59px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.email-and-phone-section {
+  width: 146px;
+  height: 128px;
+  gap: 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.email-and-phone-sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.alphabet {
+  display: flex;
+  width: 352px;
+  height: 58px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  gap: 8px;
+  color: hsla(0, 0%, 0%, 1);
+  font-size: 20px;
+  font-weight: 400;
+
+  flex-direction: column;
+}
+
+.alphabet-span {
+  padding-left: 23px;
+}
+
+.alphabet-devider {
+  width: 352px;
+  height: 1px;
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 82%, 1);
+}
+
+#overlay {
+  height: 100vh;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+#overlay.active {
+  background-color: hsla(215, 33%, 13%, 0.294);
+}
+
+.d_none {
+  display: none;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-section img {
+  height: 55.6px;
+  width: 55.6px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+
+.add-contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.d_none {
+  display: none;
+}
+
+.sub-menu-content {
+  color: hsl(0, 0%, 80%);
+}
+
+.error-message {
+  visibility: hidden;
+  display: block;
+  min-height: 16px;
+  font-size: 14px;
+  color: red;
+  margin-left: 5px;
+  margin-top: -30px;
+  margin-bottom: -12px;
+}
+
+.error-message.visible {
+  visibility: visible;
+}
+
+.created-contact-message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+}
+
+.created-contact-message {
+  background-color: hsl(216, 25%, 22%);
+  padding: 20px 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.highlight {
+  background-color: hsl(216, 25%, 22%);
+  transition: background-color 0.1s;
+}
+
+.highlight .contact-name {
+  color: white;
+}
+
+#created_contact_message {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.5s ease;
+}
+
+#created_contact_message.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

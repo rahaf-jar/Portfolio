@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Pollo Loco</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/mobile-buttons.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/7_statusbars/3_icons/icon_coin.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/legal-notice.css" />
+    <link rel="stylesheet" href="styles/game-instruction.css" />
+    <script src="classes/drawable-Object.class.js"></script>
+    <script src="classes/moveable-object.class.js"></script>
+    <script src="classes/character.class.js"></script>
+    <script src="classes/chicken.class.js"></script>
+    <script src="classes/small-chicken.class.js"></script>
+    <script src="classes/cloud.class.js"></script>
+    <script src="classes/status-bar.class.js"></script>
+    <script src="classes/endBoss-statusbar.class.js"></script>
+    <script src="classes/coin-bar.class.js"></script>
+    <script src="classes/bottle-bar.class.js"></script>
+    <script src="classes/coins.class.js"></script>
+    <script src="classes/bottles.class.js"></script>
+    <script src="classes/background-object.class.js"></script>
+    <script src="classes/endboss.class.js"></script>
+    <script src="classes/keyboard.class.js"></script>
+    <script src="classes/level.class.js"></script>
+    <script src="js/background-generator.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="classes/sound-manager.class.js"></script>
+    <script src="classes/collision-manager.class.js"></script>
+    <script src="classes/ui-manager.class.js"></script>
+    <script src="classes/input-manager.class.js"></script>
+    <script src="classes/world.class.js"></script>
+    <script src="classes/throwable-Object.class.js"></script>
+    <script src="templates/game.templates.js"></script>
+    <script src="js/game.js"></script>
+  </head>
+  <body onload="init()">
+    <div id="rotate-screen" class="d_none">
+      <div class="rotate-message"><b>📱 Rotate your device to play</b></div>
+    </div>
+    <div class="header-container">
+      <header>
+        <div class="header-buttons-landscape">
+          <img
+            onclick="openMenu()"
+            id="menu_icon"
+            class="menu-icon"
+            src="./img/on_canvas_options/menu.png"
+            alt=""
+          />
+        </div>
+        <div class="header-buttons">
+          <button onclick="openLegalNotice()">Legal Notice</button>
+          <button onclick="openAboutTheGame()" id="about_the_game">
+            About the Game
+          </button>
+        </div>
+      </header>
+    </div>
+    <div class="background"></div>
+    <h1>El Pollo Loco</h1>
+    <canvas width="700" height="480" id="canvas"></canvas>
+    <div id="start-button-container">
+      <button
+        class="start-game-button"
+        id="start-game-button"
+        onclick="startGameFromButton()"
+      >
+        <img src="img/on_canvas_options/play.png" alt="" />
+      </button>
+    </div>
+
+    <div id="mobile-control-buttons">
+      <div class="mobile-buttons-containers">
+        <button class="mobile-buttons" id="btn-throw">
+          <img src="img/mobile/throw.png" alt="" />
+        </button>
+        <button class="mobile-buttons" id="btn-jump">
+          <img src="img/mobile/jump.png" alt="" />
+        </button>
+      </div>
+      <div class="mobile-buttons-containers">
+        <button class="mobile-buttons" id="btn-left">
+          <img src="img/mobile/left.png" alt="" />
+        </button>
+        <button class="mobile-buttons" id="btn-right">
+          <img src="img/mobile/right.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+<div class="user-instructions" id="normal-instructions">
+  <div class="sub-instructions">
+    <p>Press 'N' to start</p>
+    <p>Press 'X' to throw bottle</p>
+  </div>
+  <div class="sub-instructions">
+    <p>Press 'SPACE' to jump</p>
+    <p>Press 'arrow left / right' to move</p>
+  </div>
+</div>
+
+<div class="user-instructions" id="endgame-instructions" style="display: none;">
+  <button onclick="backToStartScreen()" class="sub-instructions">Back to Startscreen</button>
+  <button onclick="restartGame()" class="sub-instructions">Restart</button>
+</div>
+
+    <div onclick="toggleOff('overlay')" class="d_none" id="overlay"></div>
+
+    <div
+      onclick="toggleOff('menu_overlay')"
+      class="d_none"
+      id="menu_overlay"
+    ></div>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(41, 171, 226);
+}
+
+.logo-section {
+  position: absolute;
+  top: 36px;
+  left: 32px;
+  z-index: 999;
+}
+
+.logo-section .logo-image {
+  width: 100.03px;
+  height: 121.97px;
+}
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(246, 247, 248);
+  min-height: 100vh;
+}
+
+.register-container {
+  display: flex;
+  position: fixed;
+  max-width: 500px;
+  width: 90%;
+  top: 20%;
+  border-radius: 30px;
+  gap: 32px;
+  padding: 48px 88px 48px 88px;
+  flex-direction: column;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.039);
+  background-color: white;
+}
+
+.back-arrow {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.register-header {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.title-group {
+  text-align: center;
+}
+
+.register-title {
+  font-weight: 700;
+  font-size: clamp(40px, 4vw, 61px);
+}
+
+.title-underline {
+  width: 140px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  gap: 35px;
+}
+
+#register-btn:disabled {
+  background-color: rgb(209, 209, 209);
+  color: rgb(138, 138, 138);
+  cursor: not-allowed;
+}
+
+#register-btn:not(:disabled) {
+  background-color: rgb(42, 54, 71);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-button {
+  width: 125px;
+  height: 80%;
+  border-radius: 8px;
+  background: rgb(42, 54, 71);
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.register-button:hover {
+  background-color: rgb(41, 171, 226);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 12px 38px 12px 21px;
+  border-radius: 10px;
+  border: 1px solid;
+  opacity: 0.5;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus-visible {
+  outline: none;
+  border: 2px solid rgb(41, 171, 226);
+  opacity: 1;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 4px;
+  height: 18px;
+  visibility: hidden;
+}
+
+.error-message.visible {
+  visibility: visible;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  pointer-events: none;
+}
+
+.input-icon-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  cursor: pointer;
+}
+
+.input-icon-password {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+.privacy-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.checkbox {
+  height: 15px;
+  width: 15px;
+}
+
+footer {
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  gap: 16px;
+  opacity: 0.5;
+}
+
+.footer-link {
+  color: #a8a8a8;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: scale(1.1);
+  color: hsl(198, 76%, 52%);
+}
+
+#message-box {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(42, 54, 71);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+#message-box.visible {
+  display: block;
+  animation: fadeInOut 2s ease forwards;
+}
+
+.privacy-policy:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
