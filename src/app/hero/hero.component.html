@@ -23,7 +23,14 @@
           </div>
         </div>
       </div>
-      <button (click)="scroll.scrollTo('contact')">
+      <button
+        class="lets-talk-button"
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        (click)="scroll.scrollTo('contact')"
+      >
         {{ translation.t("hero.talk") }}
       </button>
     </div>
@@ -62,7 +69,7 @@
           alt="LinkedIn"
         />
       </a>
-      <a class="email" (click)="scroll.scrollTo('contact')">
+      <a class="email typing-text" (click)="scroll.scrollTo('contact')">
         jarrousrahaf&#64;gmail.com
       </a>
     </div>

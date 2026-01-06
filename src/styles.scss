@@ -122,3 +122,21 @@ h1 {
     padding: 37px 20px;
   }
 }
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid hsl(95, 80%, 51%);
+  font-size: 16px;
+  animation: typing 10s steps(90, end) infinite;
+}
+
+@keyframes typing {
+  0% { max-width: 0ch; border-color: hsl(95, 80%, 51%); }
+  40% { max-width: 90ch; border-color: hsl(95, 80%, 51%); }
+  50% { max-width: 90ch; border-color: transparent; }
+  55% { border-color: hsl(95, 80%, 51%); }
+  60% { max-width: 90ch; border-color: hsl(95, 80%, 51%); }
+  100% { max-width: 0ch; border-color: hsl(95, 80%, 51%); }
+}
