@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    background-color: hsl(210, 13%, 97%);
+}
+
+.desktop-menu{
+    width: 232px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    background-color: hsla(215, 26%, 22%, 1);
+    position: fixed;
+    z-index: 2000;
+}
+
+.logo{
+    width: 100.03px;
+    height: 121.97px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+.logo-container button{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 232px;
+    height: 229px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu button{
+    width: 232px;
+    height: 46px;
+    padding-top: 8px;
+    padding-right: 53px;
+    padding-bottom: 8px;
+    padding-left: 53px;
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+.menu button:hover{
+    background-color: hsl(216, 36%, 26%);
+}
+
+.menu button.active{
+    background-color: hsl(219, 67%, 12%);
+}
+
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+button p{
+    color: hsla(0, 0%, 80%, 1);
+}
+
+.desktop-footer{
+    display: flex;
+    flex-direction: column;
+    height: 317px;
+}
+
+.desktop-footer-content{
+    padding-top: 130px;
+    width: 100%;
+}
+
+.desktop-footer button{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+
+    height: 35px;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.desktop-footer button p{
+    color: hsla(0, 0%, 66%, 1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.desktop-footer button p:hover{
+    color: hsl(198, 76%, 52%);
+    transform: scale(1.1);
+    font-weight: 550;
+
+}
+
+.header{
+    height: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.1);
+    position: fixed;
+    padding-top: 20px;
+    padding-left: 348px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    z-index: 1000; 
+    top: 0;
+}
+
+.header-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: hsla(0, 0%, 0%, 1);
+    width: 319px;
+    height: 24px;
+}
+
+.user-profile{
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+    width: 56px;
+    height: 56px;
+    gap: 16px;
+    color: hsl(198, 76%, 52%);
+    background-color: hsla(210, 13%, 97%, 1);
+    border: 3px solid hsla(215, 26%, 22%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.help-img{
+    position: fixed;
+    right: 0;
+    margin-right: 110px;
+    width: 32px;
+    height: 32px;
+    gap: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.help-img:hover{
+    transform: scale(1.1);
+}
+
+.user-profile:hover{
+    background-color: hsl(213, 18%, 90%);
+    cursor: pointer;
+}
+
+.d_none{
+    display: none;
+}
+
+.sub-menu {
+    background-color: hsla(215, 26%, 22%, 1);
+    width: 150px;
+    height: 158px;
+    position: fixed;
+    top: 136px;
+    right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    z-index: 2000;
+}
+
+.sub-menu-content{
+    color: hsl(0, 0%, 80%) ;
+}

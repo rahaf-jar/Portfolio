@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.board-container {
+    margin-left: 250px;
+    max-width: 1440px;
+    margin-top: 100px;
+}
+
+.board-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.board-header-right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+    padding: 4px 12px;
+    width: 300px;
+    height: 38px;
+    justify-content: space-between;
+}
+
+.search-box-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-icon {
+    height: 28px;
+}
+
+.board-input-search {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.board-input-search:focus {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    align-content: center;
+    background-color: transparent;
+}
+
+.search-box:focus-within {
+    border: 1px solid #29abe2;
+}
+
+.board-input-search::placeholder {
+    font-size: 16px;
+    color: #d1d1d1;
+    align-content: center;
+}
+
+@keyframes task-blink {
+    0% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.task-blink {
+    animation: task-blink 0.5s ease-in-out 0s infinite;
+}
+
+.board-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-main-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.board-main-box-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a3647;
+    padding: 10px;
+}
+
+.board-main-box-title img:hover {
+    cursor: pointer;
+}
+
+.drag-area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    height: 600px;
+    padding: 8px;
+}
+
+.dragging {
+    transform: rotate(5deg);
+    transition: transform 0.2s ease;
+}
+
+.drag-area.highlight {
+    background-color: rgba(231, 231, 231, 1.0);
+    border-radius: 24px;
+}
+
+.empty-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 231, 231, 1.0);
+    color: rgba(168, 168, 168, 1.0);
+    border-radius: 10px;
+    height: 38px;
+    border: dashed 1px rgba(168, 168, 168, 1.0);
+    text-align: center;
+    padding: 4px;
+}
+
+.no-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    height: 38px;
+}
+
+.category-user {
+    background-color: #0038FF;
+}
+
+.category-technical {
+    background-color: #1FD7C1;
+}
+
+.selected-initials-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    min-height: 32px;
+    position: static;
+    z-index: 0;
+}
+
+.initial-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.delete-btn,
+.edit-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.edit-btn-icon {
+    background-image: url("/assets/icons/board/board-edit-icon.svg");
+    height: 24px;
+    width: 24px;
+}
+
+.edit-btn:hover .edit-btn-icon {
+    background-image: url("/assets/icons/board/board-edit-icon-hover.svg");
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    color: #29ABE2;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.delete-btn-icon {
+    background-image: url("/assets/icons/board/board-delete-icon.svg");
+    height: 24px;
+    width: 24px;
+}
+
+.delete-btn:hover .delete-btn-icon {
+    background-image: url("/assets/icons/board/board-delete-icon-hover.svg");
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #29ABE2;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ok-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 4px;
+    background-color: #2A3647;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: #FFFFFF;
+}
+
+.ok-btn:hover {
+    background-color: #29abe2;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -12px !important;
+    margin-left: 4px;
+    display: none;
+}
+
+.board-close-icon {
+    width: 32px;
+}
+
+.board-close-icon:hover {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.edit-mode .board-close-icon {
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.form-actions-board {
+    justify-content: flex-end;
+}
+
+#priority-edit-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.priority-edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 10px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #2A3647;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px #0000001A;
+    width: 158px;
+    height: 48px;
+    border-radius: 10px;
+
+}
+
+.priority-edit-btn img {
+    width: 40px;
+}
+
+.priority-edit-btn:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.priority-edit-btn.selected {
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.priority-edit-btn.selected img {
+    filter: brightness(0) invert(1);
+}
+
+.priority-edit-btn[data-priority="urgent"].selected {
+    background-color: #FF4D4D;
+}
+
+.priority-edit-btn[data-priority="medium"].selected {
+    background-color: #FFAA40;
+}
+
+.priority-edit-btn[data-priority="low"].selected {
+    background-color: #4BB543;
+}
+
+.board-add-task-modal.open {
+    transform: translateX(0);
+    opacity: 1;
+    overflow-y: auto;
+}
+
+#due_date_input {
+    background-color: white;
+}
+
+#due_date_input:hover {
+    cursor: pointer;
+}
+
+.priority-headline {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.priority-container {
+    display: flex;
+    align-items: center;
+}
+
+.priority-container img {
+    width: 40px;
+}
+
+.due-date-headline {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-selected {
+    background-color: #091931;
+    color: #FFFFFF;
+}
+
+.contact-selected:hover {
+    background-color: #091931;
+}

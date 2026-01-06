@@ -1,0 +1,81 @@
+@media(max-width: 800px) {
+
+    .logo-section {
+        top: 36px;
+        left: 32px;
+    }
+
+  .logo-section .logo-image {
+    width: 71px;
+    height: 84px;
+  }
+}
+
+@media(max-width: 500px) {
+    .logo-image {
+      width: 64px;
+      height: 78.03px;
+    }
+
+    .logo-section {
+      top: 23px;
+      left: 21px;
+    }
+
+    .register-container{
+        padding: 30px 20px 30px 20px;
+        border-radius: 20px;
+    }
+
+    .register-title{
+        font-size: 30px;
+    }
+
+    .register-button{
+        width: 110px;
+        height: 60%;
+    }
+
+    .submit-container{
+        align-items: center;
+    }
+
+    .checkbox{
+        margin-top: 19px;
+    }
+
+    .accept-span{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .footer-link{
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 800px){
+    .logo-section{
+        top: 30px;
+    }
+
+    .logo-image{
+        width: 40px;
+    }
+
+    .register-container{
+        padding: 10px 20px 10px 20px;
+    }
+
+    footer{
+        bottom: 15px;
+    }
+
+    .submit-container{
+        height: 45px;
+    }
+
+    .register-button{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,313 @@
+#description {
+  resize: vertical;
+  min-height: 128px;
+  max-height: 328px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+#description::placeholder {
+  width: 100%;
+}
+
+.subtask-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subtask-edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subtask-edit input {
+  flex: 1;
+  height: 48px;
+  background-color: #ffffff;
+  border: 2px solid #2a3647;
+  border-radius: 10px;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.subtask-edit img {
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.subtask-list-add {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  max-height: 80px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.subtask-list-item {
+  list-style-type: disc;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subtask-list-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+
+.subtask-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#subtask-input {
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 16px;
+  padding-right: 96px;
+  box-sizing: border-box;
+}
+
+.subtask-icons {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.subtask-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  filter: brightness(0);
+}
+
+.subtask-icons img.icon-black {
+  filter: brightness(0);
+}
+
+#subtask-plus {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: auto;
+  height: 24px;
+  display: flex;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#subtask-plus img {
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+#subtask-plus:hover img {
+  background-color: #e0e0e0;
+}
+
+.subtask-icon {
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.subtask-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.subtask-list-item.subtask-edit-mode {
+  background-color: #ffffff;
+  border-left: 2px solid #29abe2;
+  border-right: 2px solid #29abe2;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: 0 16px;
+  list-style-type: none;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1;
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.subtask-list-item.subtask-edit-mode span {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.subtask-edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 2px solid #29abe2;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  height: 24px;
+  scrollbar-gutter: stable;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.subtask-input-edit-wrapper {
+  flex: 1;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.subtask-input-edit-wrapper input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  border-radius: 0;
+}
+
+.subtask-edit-container img {
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  filter: brightness(0);
+  transition: background-color 0.2s ease;
+  margin-left: 0px;
+}
+
+.subtask-edit-container img:hover {
+  background-color: transparent;
+}
+
+.subtask-edit-confirm {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.subtask-edit-confirm:hover {
+  background-color: #e0e0e0;
+}
+
+.subtask-edit-icons {
+  display: flex-end;
+  gap: 0px;
+  align-items: center;
+  padding-right: 0;
+  margin-left: auto;
+}
+
+.subtask-edit-input {
+  background-color: #ffffff !important;
+}
+
+.subtask-edit-buttons img[src$="add-task-divider.svg"] {
+  margin: 0 6px;
+}
+
+.subtask-list-item .subtask-edit-btn,
+.subtask-list-item .subtask-remove-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: none;
+}
+
+.subtask-list-item:hover .subtask-edit-btn,
+.subtask-list-item:hover .subtask-remove-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Icons standardmäßig versteckt */
+.subtask-list-item .subtask-icons {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Stift‑ und Mülleimer‑Buttons nur beim Hover einblenden */
+.subtask-list-item:hover .subtask-icons {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Punkt links wie im Board */
+.subtask-dot {
+  flex: 0 0 auto;      /* Punkt bleibt so schmal wie sein Inhalt */
+  margin-right: 12px;  /* Abstand zwischen Punkt und Text */
+}
+
+/* Icons ans rechte Ende schieben */
+.subtask-list-icons {
+  margin-left: auto;   /* schiebt den Icon‑Wrapper ganz nach rechts */
+}
