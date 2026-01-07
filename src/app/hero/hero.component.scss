@@ -275,6 +275,9 @@
 }
 
 @media (max-height: 667px) {
+  .main-hero-container{
+    margin-top: -100px;
+}
   .me1 {
     bottom: 100px;
   }
