@@ -20,7 +20,7 @@ export class PortfolioComponent {
       skills: 'JavaScript | HTML | CSS | Firebase',
       descriptionKey: 'portfolio.projects.join',
       image: 'assets/imgs/projects/join.png',
-      liveLink: 'https://join-467.developerakademie.net/index.html',
+      liveLink: '/join/index.html',
       githubLink: 'https://github.com/rahaf-jar/Join',
     },
     {
@@ -28,7 +28,7 @@ export class PortfolioComponent {
       skills: 'JavaScript | HTML | CSS',
       descriptionKey: 'portfolio.projects.elPollo',
       image: 'assets/imgs/projects/el-pollo-loco.png',
-      liveLink: 'https://rahaf-jarrous.developerakademie.net/el_pollo_loco/index.html',
+      liveLink: '/el-pollo-loco/index.html',
       githubLink: 'https://github.com/rahaf-jar/El-Pollo-Loco',
     },
   ];
