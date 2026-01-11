@@ -47,6 +47,8 @@
   color: white;
   padding: 60px 120px;
   line-height: 1.6;
+  max-width: 1920px;
+  margin: auto;
 
   h2 {
     color: hsl(266, 100%, 64%);
@@ -83,7 +85,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1920px) {
   .legal-header-inner {
     h1 {
       font-size: 50px;
@@ -157,6 +159,15 @@
     li,
     span {
       font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 3300px) {
+  .legal-header-inner {
+    .line.long {
+      width: 80%;
+      min-width: 1800px;
     }
   }
 }
