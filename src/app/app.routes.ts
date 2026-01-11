@@ -1,7 +1,7 @@
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { provideRouter } from '@angular/router';
 
 export const routes = [
   { path: '', component: HomeComponent },
@@ -9,4 +9,10 @@ export const routes = [
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
 ];
 
-export const routerProviders = provideRouter(routes);
+export const routerProviders = provideRouter(
+  routes,
+  withInMemoryScrolling({
+    scrollPositionRestoration: 'top',
+    anchorScrolling: 'enabled',
+  })
+);
