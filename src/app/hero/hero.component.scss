@@ -51,6 +51,7 @@
   padding-left: 0px;
   padding-right: 80px;
   bottom: 180px;
+  max-width: 1920px;
 
   a {
     color: hsl(0, 0%, 100%);
@@ -275,9 +276,9 @@
 }
 
 @media (max-height: 667px) {
-  .main-hero-container{
+  .main-hero-container {
     margin-top: -100px;
-}
+  }
   .me1 {
     bottom: 100px;
   }

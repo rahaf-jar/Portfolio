@@ -1,6 +1,8 @@
 .about-me-container {
   display: flex;
   justify-content: space-between;
+  max-width: 1920px;
+  margin: auto;
 
   .about-me-left-side {
     display: flex;
@@ -86,7 +88,7 @@
     margin-top: -130px;
     height: auto;
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     right: 0;
   }
 }
@@ -138,7 +140,7 @@
         display: none;
       }
 
-      .me2{
+      .me2 {
         display: none;
       }
     }

@@ -23,6 +23,8 @@
 .contact {
   display: flex;
   flex-direction: column;
+  max-width: 1920px;
+  margin: auto;
 
   .contact-content {
     display: flex;
@@ -201,13 +203,15 @@ button {
   &.error input,
   &.error textarea {
     border-color: hsl(3, 100%, 59%);
-    background: url("/assets/imgs/remaining-icons/error.svg") right 12px center no-repeat;
+    background: url("/assets/imgs/remaining-icons/error.svg") right 12px center
+      no-repeat;
   }
 
   &.valid input,
   &.valid textarea {
     border-color: hsl(95, 80%, 51%);
-    background: url("/assets/imgs/remaining-icons/correct.svg") right 12px center no-repeat;
+    background: url("/assets/imgs/remaining-icons/correct.svg") right 12px
+      center no-repeat;
   }
 }
 

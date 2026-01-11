@@ -47,6 +47,8 @@
   color: white;
   padding: 60px 120px;
   line-height: 1.6;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .privacy-policy-container {
@@ -94,7 +96,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1920px) {
   .privacy-header-inner {
     h1 {
       font-size: 50px;
@@ -133,7 +135,7 @@
   .privacy-header-inner {
     gap: 10px;
 
-    h1{
+    h1 {
       font-size: 24px;
     }
 
@@ -162,15 +164,23 @@
     }
   }
 
-  .privacy-policy-container{
+  .privacy-policy-container {
     ul {
-    margin-left: 0;
-  }
-  
+      margin-left: 0;
+    }
   }
   p,
   li,
   span {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 3300px) {
+  .privacy-header-inner {
+    .line.long {
+      width: 80%;
+      min-width: 1800px;
+    }
   }
 }
