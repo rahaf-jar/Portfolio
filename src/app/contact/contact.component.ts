@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ScrollService } from '../services/scroll.service';
 import { TranslationService } from '../services/translation.service';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-contact',
@@ -40,7 +40,6 @@ export class ContactComponent {
 
   validateEmail() {
     const emailPattern = /^(?!.*\.\.)[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     this.emailError = !emailPattern.test(this.email);
   }
 

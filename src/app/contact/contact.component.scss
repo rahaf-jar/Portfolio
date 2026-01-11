@@ -57,9 +57,11 @@
     box-sizing: border-box;
     color: #fff;
     font-family: "Poppins-Light";
+
     &::placeholder {
       color: hsl(0, 0%, 90%);
     }
+
     &:hover,
     &:focus {
       border-color: hsl(95, 80%, 51%);
@@ -116,6 +118,7 @@
         a {
           color: hsl(266, 100%, 70%);
           text-decoration: none;
+
           &:hover {
             text-decoration: underline;
           }
@@ -126,8 +129,18 @@
 
   small {
     display: block;
+    min-height: 18px;
     color: hsl(349, 96%, 62%);
     margin: -10px 0 10px;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  small.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -169,6 +182,7 @@ button {
     width: 40px;
     height: 40px;
     transition: transform 0.3s;
+
     &:hover {
       transform: translateY(-1px) scale(1.1);
     }
@@ -177,6 +191,7 @@ button {
 
 .input-wrapper {
   position: relative;
+
   input,
   textarea {
     padding-right: 40px;
@@ -186,21 +201,20 @@ button {
   &.error input,
   &.error textarea {
     border-color: hsl(3, 100%, 59%);
-    background: url("/assets/imgs/remaining-icons/error.svg") right 12px center
-      no-repeat;
+    background: url("/assets/imgs/remaining-icons/error.svg") right 12px center no-repeat;
   }
 
   &.valid input,
   &.valid textarea {
     border-color: hsl(95, 80%, 51%);
-    background: url("/assets/imgs/remaining-icons/correct.svg") right 12px
-      center no-repeat;
+    background: url("/assets/imgs/remaining-icons/correct.svg") right 12px center no-repeat;
   }
 }
 
 .privacy-link {
   color: hsl(266, 100%, 64%);
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -228,18 +242,14 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .contact-header {
-    h1 {
-      font-size: 50px;
-    }
+  .contact-header h1 {
+    font-size: 50px;
   }
 }
 
 @media (max-width: 1000px) {
-  .contact-header {
-    .line.long {
-      min-width: 250px;
-    }
+  .contact-header .line.long {
+    min-width: 250px;
   }
 
   .contact-content {
@@ -265,10 +275,8 @@ button {
 }
 
 @media (max-width: 700px) {
-  .contact-header {
-    .line.long {
-      min-width: 150px;
-    }
+  .contact-header .line.long {
+    min-width: 150px;
   }
 
   .padding {
@@ -288,24 +296,22 @@ button {
     }
   }
 
-  .contact {
-    .contact-content {
-      .contact-left-side {
-        width: 300px;
+  .contact-content .contact-left-side {
+    width: 300px;
 
-        h2 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 16px;
-        }
-      }
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 
   .contact-form {
     position: relative;
     z-index: 1;
+
     input {
       padding: 8px 15px;
       font-size: 16px;

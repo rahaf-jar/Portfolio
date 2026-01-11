@@ -29,7 +29,7 @@
           (blur)="validateName()"
         />
       </div>
-      <small *ngIf="nameError">
+      <small class="error-text" [class.visible]="nameError">
         {{ translation.t("contact.form.errors.name") }}
       </small>
 
@@ -46,7 +46,7 @@
           (blur)="validateEmail()"
         />
       </div>
-      <small *ngIf="emailError">
+      <small class="error-text" [class.visible]="emailError">
         {{ translation.t("contact.form.errors.email") }}
       </small>
 
@@ -62,7 +62,7 @@
           (blur)="validateMessage()"
         ></textarea>
       </div>
-      <small *ngIf="messageError">
+      <small class="error-text" [class.visible]="messageError">
         {{ translation.t("contact.form.errors.message") }}
       </small>
 
@@ -119,7 +119,7 @@
             </ng-container>
           </span>
         </div>
-        <small *ngIf="checkboxError">
+        <small class="error-text" [class.visible]="checkboxError">
           {{ translation.t("contact.form.errors.privacy") }}
         </small>
       </div>
@@ -131,6 +131,7 @@
       >
         {{ translation.t("contact.form.button") }}
       </button>
+
       <p *ngIf="feedbackMessage" class="feedback-message">
         {{ feedbackMessage }}
       </p>
