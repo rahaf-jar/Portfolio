@@ -39,7 +39,8 @@ export class ContactComponent {
   }
 
   validateEmail() {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^(?!.*\.\.)[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     this.emailError = !emailPattern.test(this.email);
   }
 
@@ -78,7 +79,7 @@ export class ContactComponent {
         this.feedbackMessage = 'Message sent successfully!';
         setTimeout(() => {
           this.feedbackMessage = '';
-        }, 3000); 
+        }, 3000);
 
         this.name = '';
         this.email = '';
