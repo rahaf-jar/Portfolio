@@ -145,6 +145,21 @@
   transform: translateX(-50%);
 }
 
+@media (max-height: 600px) {
+  .hero-footer {
+    margin-bottom: -170px;
+  }
+
+  .me1 {
+    width: 400px;
+    top: 60%;
+  }
+
+  .hero-right-side {
+    margin-bottom: 100px;
+  }
+}
+
 @media (min-width: 1920px) {
   .hero-footer {
     min-width: 1800px;
@@ -155,9 +170,9 @@
     width: 1000px;
   }
 
-  .me1{
-    top: 50%;
-    width: 800px;
+  .me1 {
+    top: 60%;
+    width: 1000px;
   }
 }
 
@@ -309,7 +324,7 @@
 
 .hero-footer {
   .hero-footer-icons {
-    .social-media-icons{
+    .social-media-icons {
       display: flex;
       gap: 20px;
       margin-left: 120px;
