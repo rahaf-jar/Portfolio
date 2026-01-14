@@ -165,6 +165,14 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .my-skills-container {
+    .shadow-2 {
+      width: 400px;
+    }
+  }
+}
+
 @media (max-width: 1600px) {
   .my-skills-container {
     .skills-container {

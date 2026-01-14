@@ -93,6 +93,15 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .about-me-container {
+    .shadow-1 {
+      width: 300px;
+      margin-top: -150px;
+    }
+  }
+}
+
 @media (max-width: 1250px) {
   .about-me-container {
     .about-me-left-side {

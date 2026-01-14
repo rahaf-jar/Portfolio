@@ -245,6 +245,12 @@ button {
   z-index: 0;
 }
 
+@media (min-width: 1920px) {
+  .shadow-4 {
+    width: 600px;
+  }
+}
+
 @media (max-width: 1200px) {
   .contact-header h1 {
     font-size: 50px;

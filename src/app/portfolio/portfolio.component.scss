@@ -59,6 +59,15 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .portfolio {
+    .shadow-3 {
+      width: 400px;
+      margin-top: 350px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .portfolio-header {
     .portfolio-header-inner {

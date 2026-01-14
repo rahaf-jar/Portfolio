@@ -145,6 +145,23 @@
   transform: translateX(-50%);
 }
 
+@media (min-width: 1920px) {
+  .hero-footer {
+    min-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .photo-shadow {
+    width: 1000px;
+    top: 10%;
+  }
+
+  .me1{
+    top: 70%;
+    width: 1000px;
+  }
+}
+
 @media (max-width: 1600px) {
   .hero-right-side {
     .name-area {
