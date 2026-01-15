@@ -18,7 +18,6 @@ body.no-scroll {
   height: 110px;
   z-index: 1000;
   background-color: hsl(220, 40%, 13%);
-  padding: 37px 100px;
 
   .header-content {
     display: flex;
@@ -176,6 +175,21 @@ body.no-scroll {
   &.active {
     color: hsl(95, 80%, 51%);
     font-weight: 700;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header {
+    .header-content{
+      padding: 0 100px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .header {
+    padding: 37px 100px;
   }
 }
 
