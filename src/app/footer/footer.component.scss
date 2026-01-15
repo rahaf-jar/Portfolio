@@ -1,5 +1,5 @@
-.footer{
-  .green-border{
+.footer {
+  .green-border {
     border-top: 3px solid hsl(95, 80%, 51%);
     position: relative;
     z-index: 4;
@@ -9,7 +9,7 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 280px;
   background-color: hsl(220, 40%, 13%);
