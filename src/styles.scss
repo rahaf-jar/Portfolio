@@ -83,10 +83,6 @@ button {
   font-weight: bold;
 }
 
-.margin-top-110px {
-  margin-top: 110px;
-}
-
 h1 {
   font-size: 70px;
   font-family: "Poppins-Bold";
@@ -156,4 +152,16 @@ h1 {
   55% { border-color: hsl(95, 80%, 51%); }
   60% { max-width: 90ch; border-color: hsl(95, 80%, 51%); }
   100% { max-width: 0ch; border-color: hsl(95, 80%, 51%); }
+}
+
+#hero,
+#about_me,
+#skills,
+#portfolio,
+#contact {
+  scroll-margin-top: 110px;
+}
+
+.page-content {
+  padding-top: 360px;
 }
