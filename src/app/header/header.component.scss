@@ -8,22 +8,29 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.header,
+.header-mobile {
+  width: calc(100% - env(safe-area-inset-right) - env(safe-area-inset-left));
+}
+
 .header {
   display: flex;
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0;
   width: 100%;
-  transform: translateX(-50%);
   height: 110px;
   z-index: 1000;
   background-color: hsl(220, 40%, 13%);
+  justify-content: center;
 
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1920px;
+    padding: 0 100px;
 
     img {
       height: 50px;
@@ -82,20 +89,20 @@ body.no-scroll {
   display: none;
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0;
   width: 100%;
-  max-width: 1920px;
-  transform: translateX(-50%);
   height: 110px;
   z-index: 1000;
   background-color: hsl(220, 40%, 13%);
-  padding: 37px 100px;
+  justify-content: center;
 
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1920px;
+    padding: 37px 30px;
 
     img {
       height: 50px;
@@ -178,21 +185,6 @@ body.no-scroll {
   }
 }
 
-@media (min-width: 1920px) {
-  .header {
-    .header-content{
-      padding: 0 100px;
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 1920px) {
-  .header {
-    padding: 37px 100px;
-  }
-}
-
 @media (max-width: 1000px) {
   .header {
     display: none;
@@ -200,7 +192,6 @@ body.no-scroll {
 
   .header-mobile {
     display: flex;
-    padding: 37px 30px;
   }
 }
 
