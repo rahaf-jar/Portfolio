@@ -5,7 +5,7 @@
     }
 
     #animated-logo.mobile-white {
-        content: url('./assets/img/1. join-frontpage/join-logo-white.svg');
+        content: url('../assets/img/1. join-frontpage/join-logo-white.svg');
    }
 
     #animated-logo {
