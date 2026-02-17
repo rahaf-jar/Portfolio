@@ -109,7 +109,7 @@
 }
 
 .assigned-checkbox {
-    content: url("/assets/icons/board/board-check-icon.svg");
+    content: url("./assets/icons/board/board-check-icon.svg");
     appearance: none;
     width: 24px;
     height: 24px;
@@ -121,7 +121,7 @@
 }
 
 .assigned-checkbox:checked {
-    content: url("/assets/icons/board/board-assigned-check-icon-checked.svg");
+    content: url("./assets/icons/board/board-assigned-check-icon-checked.svg");
     width: 24px;
     height: 24px;
     cursor: pointer;

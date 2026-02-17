@@ -301,7 +301,7 @@ select:focus {
 }
 
 .contact-item input[type="checkbox"] {
-  content: url("/assets/icons/board/board-check-icon.svg");
+  content: url("./assets/icons/board/board-check-icon.svg");
   appearance: none;
   -webkit-appearance: none;
   width: 24px;
@@ -314,7 +314,7 @@ select:focus {
 }
 
 .contact-item input[type="checkbox"]:checked {
-  content: url("/assets/icons/board/board-assigned-check-icon-checked.svg");
+  content: url("./assets/icons/board/board-assigned-check-icon-checked.svg");
   width: 24px;
   height: 24px;
   cursor: pointer;
